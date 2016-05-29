@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>穗富投资</title>
+	<link rel="stylesheet" href="theme/suifu/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="theme/suifu/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="theme/suifu/css/theme.css" />
+	<script src="theme/suifu/js/jquery-2.1.4.min.js"></script>
+	<script src="theme/suifu/js/jquery.cookie.js"></script>
+    <script src="theme/suifu/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="theme/suifu/js/stickUp.min.js"></script>
+    <script src="theme/suifu/js/all.js"></script>
+	<script type="text/javascript">
+		jQuery(function($) { 
+			$(document).ready( function() { 
+				$('.heads').stickUp(); 
+			}); 
+		});
+	</script>
+
+<script type="text/javascript">
+	$(function(){
+		var Current=0;
+		var ClickState=true;
+		var num=$(".banner ul li").size();
+		i=0;
+		theInt = null;
+		$(".banner ul li").eq(0).fadeIn(500);
+		HuanDeng=function(p){
+			clearInterval(theInt);
+			theInt=setInterval(function(){
+				p++;
+				if(p>=num){
+					p=0;
+				}
+				Change(p);
+				Current=p;
+			},3000);
+		}	
+		//HuanDeng(0);
+		function Change(num){
+			$(".banner ul li").fadeOut(800);
+			$(".banner ul li").eq(num).fadeIn(800,function(){
+				ClickState=true;
+			});
+		}
+		$(".button-left").click(function(){
+			if(ClickState==true){
+				ClickState=false;
+				Current--;
+				if(Current<0){
+					Current=num-1;
+				}
+				Change(Current);
+				//HuanDeng(Current);
+			}
+		});
+		$(".button-right").click(function(){
+			if(ClickState==true){
+				ClickState=false;
+				Current++;
+				if(Current>=num){
+					Current=0;
+				}
+				Change(Current);
+				//HuanDeng(Current);
+			}
+		});
+		$(window).resize(function(){
+			banner();
+		});
+		function banner(){
+			var win_w=$(window).width();
+			if(win_w<=1100){
+				win_w=1100;
+			}else{
+				win_w=$(window).width();
+			}
+			banner_h=win_w*665/1920;
+			$(".banner,.banner ul li").width(win_w).height(banner_h);	
+		}
+		banner();
+	})
+</script>
+</head>
+<body>
+<div class="container-fluid tops">
+	<div class="top">
+		<span><i class="icon-phone icon-large"></i>400-6888-776</span>
+		<span><i class="icon-envelope-alt icon-large"></i>gzsftz@163.com</span>
+	</div>
+</div><!--top-->
+
+<div class="container-fluid heads">
+	<div class="head clearfix">
+		<div class="logo pull-left"><h1><a href="#"><img src="theme/suifu/img/logo.png" width="289" height="56" alt="穗富投资管理有限公司" /></a></h1></div>
+		<div class="navs pull-right">
+			<ul class="clearfix">
+				<li><a href="#">首页</a></li>
+				<li class="dropdown">
+					<a href="#" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">关于穗富 <span class="caret"></span></a>
+					<div class="dropdown-menu dr_menu">
+						<ul class="pull-left">
+    						<li><a href="#">公司介绍</a></li>
+    						<li><a href="#">管理团队</a></li>
+    						<li><a href="#">大事记</a></li>
+    						<li><a href="#">公司荣誉</a></li>
+ 						</ul>
+ 						<dl class="pull-left">
+ 							<dt><img src="theme/suifu/images/nav_img.png"></dt>
+ 							<dd>广州穗富投资管理有限公司，2013年5月经广州市工商行政管理局批准创立。注册资金1000万，目前主要经营业务为资产管理</dd>
+ 						</dl>
+
+					</div>
+
+				</li>
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown">投资体系 <span class="caret"></span></a>
+					<div class="dropdown-menu dr_menu">
+						<ul class="pull-left">
+    						<li><a href="#">公司介绍</a></li>
+    						<li><a href="#">管理团队</a></li>
+    						<li><a href="#">大事记</a></li>
+    						<li><a href="#">公司荣誉</a></li>
+ 						</ul>
+ 						<dl class="pull-left">
+ 							<dt><img src="theme/suifu/images/nav_img.png"></dt>
+ 							<dd>广州穗富投资管理有限公司，2013年5月经广州市工商行政管理局批准创立。注册资金1000万，目前主要经营业务为资产管理</dd>
+ 						</dl>
+
+					</div>
+				</li>
+				<li><a href="#">穗富动态</a></li>
+				<li><a href="#">穗富产品</a></li>
+				<li><a href="#">穗富服务</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<div class="banner">
+	<ul>
+		<li><a href="/about/"><img src="theme/suifu/images/banner2.jpg" /></a></li>
+	    <li><a href="/unite/unite.aspx"><img src="theme/suifu/images/banner2.jpg" /></a></li>
+	    <li><a href="/unite/index.aspx"><img src="theme/suifu/images/banner.jpg" /></a></li>
+	</ul>
+	
+	<span class="mask"></span>
+	<!--<span class="left-bg"></span>
+	<span class="right-bg"></span>
+	<span class="mask"></span>
+	<span class="button button-left"></span>
+	<span class="button button-right"></span>-->
+</div>
+
+<div class="container">
+	<div class="abt clearfix">
+		<div class="abt_l pull-left">
+			<div class="abt_lt"><i class="icon-user"></i>About <strong>Us</strong> <span class="pull-right"><a href="#">+</a></span></div>
+			<p>广州穗富投资管理有限公司，2013年5月经广州市工商行政管理局批准创立。注册资金1000万，目前主要经营业务为资产管理、投资管理与投资咨询等业务。 穗富投资核心团队成员来自投行精英人士...</p>
+		</div>
+
+		<div class="abt_c pull-left">
+			<span class="glyphicon glyphicon-phone-alt"></span>
+			<span class="tel">400-6888-776</span>
+		</div>
+
+		<div class="abt_r pull-right">
+			<ul class="abt_r1 clearfix">
+				<li><a class="sf_logo" href="#">suifu</a></li>
+				<li><a class="qq_icon" href="tencent://message/?uin=2692446214&websiteName=()&Menu=yes">qq</a></li>
+				<li><a class="sina_icon" href="#">sina</a></li>
+				<li>
+					<a class="weixin_icon" id="weixin_icon">weixin</a>
+					<div class="popover">
+					<span class="arrow"></span>
+					<b>穗富官方微信</b><img src="theme/suifu/img/weixin_b.png"/>
+				</div>
+				</li>
+				
+			</ul>
+			<div class="abt_r2">广州市花都区新华镇凤凰北路41号永愉大厦1410室</div>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="container-fluid cps">
+	<div class="cp">
+		<div class="cp_t">产品业绩</div>
+		<div class="cp_c clearfix">
+			<div class="cp_cl pull-left">
+				<ul class="clearfix" id="page1">
+					<li class="no1 selected"><a href="#no1">穗富1号</a></li>
+					<li class="no2"><a href="#no2">穗富2号</a></li>
+					<li class="no3"><a href="#no3">穗富3号</a></li>
+					<li class="no4"><a href="#no4">穗富4号</a></li>
+					<li class="no5"><a href="#no5">穗富5号</a></li>
+					<li class="no6"><a href="#no6">穗富6号</a></li>
+				</ul>
+				<ul class="clearfix hides" id="page2">
+					<li class="no7"><a href="#no7">穗富7号</a></li>
+					<li class="no8"><a href="#no8">穗富8号</a></li>
+					<li class="no9"><a href="#no9">穗富9号</a></li>
+					<li class="no10"><a href="#no10">穗富10号</a></li>
+					<li class="no11"><a href="#no11">穗富11号</a></li>
+					<li class="no12"><a href="#no12">穗富12号</a></li>
+				</ul>
+				<ul class="clearfix hides" id="page3">
+					<li class="no13"><a href="#no13">穗富13号</a></li>
+					<li class="no14"><a href="#no14">穗富14号</a></li>
+					<li class="no15"><a href="#no15">穗富15号</a></li>
+					
+				</ul>
+				<div class="fypage">
+					<a href="#page1">1</a><a href="#page2">2</a><a href="#page3">3</a>
+
+				</div>
+
+			</div>
+
+			<div class="tab-content">
+				<div class="cp_cr pull-left" id="no1">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富1号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富1号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富1号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+
+				<div class="cp_cr pull-left hides" id="no2">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富2号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富2号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富2号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+
+				<div class="cp_cr pull-left hides" id="no3">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富3号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富3号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富3号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no4">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富4号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富4号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富4号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no5">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富5号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富5号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富5号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no6">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富6号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富6号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富6号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+
+				<div class="cp_cr pull-left hides" id="no7">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富7号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富7号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富7号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+
+				<div class="cp_cr pull-left hides" id="no8">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富8号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富8号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富8号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no9">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富9号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富9号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富9号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no10">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富10号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富10号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富10号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no11">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富11号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富11号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富11号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no12">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富12号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富12号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富12号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no13">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富13号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富13号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富13号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no14">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富14号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富14号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富14号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+				<div class="cp_cr pull-left hides" id="no15">
+					<table class="pull-left">
+						<tbody>
+							<tr><th>产品名称</th><th>成立日</th><th>净值</th><th>最新净值日</th></tr>
+							<tr><td>穗富15号</td><td>2013-07-30</td><td>368.08</td><td>2015-06-19</td></tr>
+							<tr><td>穗富15号</td><td>2013-08-30</td><td>368.08</td><td>2015-06-29</td></tr>
+
+						</tbody>
+					</table>
+					<div class="cp_cr2 pull-left">
+						<h3>穗富15号</h3>
+						<p>最新净值日：2015-06-19</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>累计增长率：</p>
+						<h2>214.19%</h2>
+						<p>&nbsp;</p>
+						<p>净值：</p>
+						<h2>307.84</h2>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="ns">
+		<div class="ns_t"><em class="pull-left"></em><i class="pull-left"></i><span>新闻中心/News</span><em class="pull-right"></em><i class="pull-right"></i></div>
+		<p class="ns_p"><a href="#">穗富公告</a><a href="#">穗富新闻</a><a href="#">穗富观点</a></p>
+		<div class="ns_c">
+			<div class="ns_cl">
+				<ul class="clearfix">
+					<li class="ns_line"><a href="#"><img src="theme/suifu/images/news_img.jpg" width="470" height="226" alt="" /></a></li>
+					<li class="ns_list">
+						<h4>2015-07-13</h4><h5><a href="#">穗富投资领跑三月排行榜 单周收益超10%</a></h5>
+						<p>穗富投资旗下管理的“粤财信托-穗富1号”异军突起，以10.14%的收益率(也是本周唯一一只涨幅超过10%的产品)，勇夺三月第一周的宝座。“中融信托-08融新48号(京鸿1期)”以9.06%的收益率，位居本周第二。云程泰 魏上云 管理的产品本周有三只挤进了前十;“兴业信托-云程泰3期” 、“北京信托-云程泰增值” 、“北京信托-云程泰增值二期”分别以8.17% 、7.57% 、6.86%的收益率，取得了第三、五、七名的好成绩。...</p>
+						<a href="#" class="ns_btn">查看更多 +</a>
+					</li>
+					
+				</ul>
+				
+				<ul class="clearfix">
+					<li class="ns_line"><h4>2015-07-13</h4><h5><a href="#">穗富投资领跑三月排行榜 单周收益超10%</a></h5>
+						<p>穗富投资旗下管理的“粤财信托-穗富1号”异军突起，以10.14%的收益率(也是本周唯一一只涨幅超过10%的产品)，勇夺三月第一周的宝座。“中融信托-08融新48号(京鸿1期)”以9.06%的收益率，位居本周第二。云程泰 魏上云 管理的产品本周有三只挤进了前十;“兴业信托-云程泰3期” 、“北京信托-云程泰增值” 、“北京信托-云程泰增值二期”分别以8.17% 、7.57% 、6.86%的收益率，取得了第三、五、七名的好成绩。...</p>
+						<a href="#" class="ns_btn">查看更多 +</a>
+					</li>
+					<li class="ns_list">
+						<a href="#"><img src="theme/suifu/images/news_img.jpg" width="470" height="226" alt="" /></a>
+					</li>
+				
+				</ul>
+
+				<ul class="clearfix">
+					<li class="ns_line"><h4>2015-07-13</h4><h5><a href="#">穗富投资领跑三月排行榜 单周收益超10%</a></h5>
+						<p>穗富投资旗下管理的“粤财信托-穗富1号”异军突起，以10.14%的收益率(也是本周唯一一只涨幅超过10%的产品)，勇夺三月第一周的宝座。“中融信托-08融新48号(京鸿1期)”以9.06%的收益率，位居本周第二。云程泰 魏上云 管理的产品本周有三只挤进了前十;“兴业信托-云程泰3期” 、“北京信托-云程泰增值” 、“北京信托-云程泰增值二期”分别以8.17% 、7.57% 、6.86%的收益率，取得了第三、五、七名的好成绩。...</p>
+						<a href="#" class="ns_btn">查看更多 +</a>
+					</li>
+					<li class="ns_list">
+						<h4>2015-07-13</h4><h5><a href="#">穗富投资领跑三月排行榜 单周收益超10%</a></h5>
+						<p>穗富投资旗下管理的“粤财信托-穗富1号”异军突起，以10.14%的收益率(也是本周唯一一只涨幅超过10%的产品)，勇夺三月第一周的宝座。“中融信托-08融新48号(京鸿1期)”以9.06%的收益率，位居本周第二。云程泰 魏上云 管理的产品本周有三只挤进了前十;“兴业信托-云程泰3期” 、“北京信托-云程泰增值” 、“北京信托-云程泰增值二期”分别以8.17% 、7.57% 、6.86%的收益率，取得了第三、五、七名的好成绩。...</p>
+						<a href="#" class="ns_btn">查看更多 +</a>
+					</li>
+				
+				</ul>
+
+				<ul class="clearfix">
+					<li class="ns_line"><a href="#"><img src="theme/suifu/images/news_img.jpg" width="470" height="226" alt="" /></a></li>
+					<li class="ns_list">
+						<h4>2015-07-13</h4><h5><a href="#">穗富投资领跑三月排行榜 单周收益超10%</a></h5>
+						<p>穗富投资旗下管理的“粤财信托-穗富1号”异军突起，以10.14%的收益率(也是本周唯一一只涨幅超过10%的产品)，勇夺三月第一周的宝座。“中融信托-08融新48号(京鸿1期)”以9.06%的收益率，位居本周第二。云程泰 魏上云 管理的产品本周有三只挤进了前十;“兴业信托-云程泰3期” 、“北京信托-云程泰增值” 、“北京信托-云程泰增值二期”分别以8.17% 、7.57% 、6.86%的收益率，取得了第三、五、七名的好成绩。...</p>
+						<a href="#" class="ns_btn">查看更多 +</a>
+					</li>
+					
+				</ul>
+
+			</div>
+			
+		</div>
+
+	</div>
+</div>
+
+<div class="container-fluid hzs">
+	<div class="hz">
+		<div class="ns_t hz_t"><em class="pull-left"></em><i class="pull-left"></i><span>合作伙伴/Partner</span><em class="pull-right"></em><i class="pull-right"></i></div>
+		<p class="ns_p">公司秉承“规范经营、稳步发展”的经营方针，以灵活的合作方式、专业的顾问服务、秉承“诚信、专业、创新”的经营理念</p>
+		<div class="hz_c">
+			<img src="theme/suifu/images/xiamen_logo.png" alt="厦门信托" title="厦门信托" width="276" height="53" />
+			<img src="theme/suifu/images/yuecai_logo.png" alt="粤财信托" title="粤财信托" width="164" height="53" />
+			<img src="theme/suifu/images/changan_logo.gif" alt="长安信托" title="长安信托" width="239" height="53" />
+			<img src="theme/suifu/images/zhongrong_logo.png" alt="中融信托" title="中融信托" width="212" height="32" />
+		</div>
+
+	</div>
+</div>
+
+<div class="container-fluid foots">
+	<div class="foot_map pull-left"><img src="theme/suifu/images/map.png" width="500" height="175" ></div>
+	<div class="foot_info pull-right">
+		<h4>联系方式</h4>
+		<p>电话：400-6888-776</p>
+		<p>邮箱：gzsftz@163.com</p>
+		<p>地址：广州市花都区新华镇凤凰北路41号永愉大厦1410室</p>
+	</div>
+</div>
+
+<div class="container-fluid footers">
+	<div class="footer">
+		Copyright © 2015 穗富投资管理有限公司 <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备14057498号-1</a> | 技术支持：<a href="http://yuzhiqi.com/" target="_blank">豫之旗</a><span class="pull-right"><a href="#">关于我们</a> | <a href="#">投资体系</a> | <a href="#">穗富动态</a> | <a href="#">穗富产品</a> | <a href="#">穗富服务</a> | <a href="#">网站地图</a></span>
+	</div>
+	<div class="fh"><a href="#"><img src="theme/suifu/img/fanhui.png"></a></div>
+</div>
+
+<!-- 在线咨询 开始 -->
+<a id="yzq_top" href="javascript:void(0)">回到顶部</a>
+<div id="yzq_wxin" class="yzq_wxin"><a href="javascript:void(0)">微信二维码<div class="yzq_wxinh"></div></a></div>
+<div id="yzq_wshare" class="yzq_wshare"><a href="javascript:void(0)">微博二维码<div class="yzq_wshareh"></div></a></div>
+<div id="yzq_wmaps" class="yzq_wmaps"><a href="tencent://message/?uin=2692446214&websiteName=()&Menu=yes" target="_blank">客服QQ<div class="yzq_wmapsh"></div></a></div>
+<div id="yzq_phone" class="yzq_phone"><a href="javascript:void(0)">400电话<div class="yzq_phoneh"></div></a></div>
+<!-- 在线咨询 结束 -->
+
+</body>
+</html>

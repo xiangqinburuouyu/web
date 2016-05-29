@@ -1,0 +1,27 @@
+﻿.btn_case a{ background: #bfbfbf; padding:5px 20px; margin-right:10px; display:inline-block; color:#fff; }
+.btn_case a.active{ background: #da251d;}
+.btn_case a:hover{ background: #c40000;}
+
+.case_m{ position:relative; margin-bottom:20px;}
+.case_t{ }
+.case_t img{ width:100%;}
+.case_p{ position:absolute; top:0; left:0; width:100%; overflow: hidden; margin-top:30px; z-index:10; }
+.case_p a,.case_p p{ color:#fff;}
+.case_p h4{ height:20px; overflow:hidden;}
+
+.case_cs{ background:url(../img/case_bg1.png) no-repeat; padding-top:50px; padding-bottom:50px;}
+.case_cl{ width:550px; height:480px; padding:28px 27px 173px 27px; background:url(../img/case_bg2.png) no-repeat;}
+.case_clim{ width:496px; height:279px; overflow:hidden;}
+.case_clim img{ width:100%;}
+.case_cr{ width:620px; margin-left:30px; color:#fff;}
+.case_cr p{ font-size:16px;}
+.case_cr a{ color:#fff;}
+.case_cr a:hover{ color:#da251d;}
+.case_cr .case_link{ border:1px solid #fff; padding:5px 20px; display:inline-block; }
+.case_ft{ color:#da251d; font-weight:bolder; padding-top:10px;padding-bottom:20px;}
+.case_fb{ background:#e0e0e0; padding-top:30px; padding-bottom:30px;}
+.case_fi img{ width:100%;}
+@media (min-width: 768px) and (max-width: 800px){
+	.case_p{ margin-top:10px; }
+
+}

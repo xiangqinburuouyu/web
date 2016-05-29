@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>私募经理内容</title>
+	<link href="theme/simu/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="theme/simu/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="theme/simu/bootstrap-select-dist/css/bootstrap-select.min.css">
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="theme/simu/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css">
+	<![endif]-->
+	<link rel="stylesheet" href="theme/simu/css/theme.css" />
+	
+
+	<!--[if lt IE 9]>
+	<script src="theme/simu/js/html5shiv-3.7.2.min.js"></script>
+    <script src="theme/simu/js/respond-1.4.2.min.js"></script>
+    <![endif]-->
+	<script src="theme/simu/js/require.min.js"></script>
+	<script src="theme/simu/js/require-config.js"></script>
+
+	<script src="theme/simu/js/simu-com-on-chart.js"></script>
+
+
+</head>
+<body>
+	<div class="right_fw">
+	    <ul class="fw_list">
+	        <li class="fw_item item_1">
+	            <a class="fw_inner" href="javascript:;" title="客服"></a>
+	            
+	        </li>
+	        <li class="fw_item item_2">
+	            <a class="fw_inner" href="#" target="_blank" title="微信"></a>
+	            <div class="fw_code">
+	                <div class="fw_img"><img src="theme/simu/images/qc.png" alt="微信二维码"></div>
+	                <div class="fw_txt">关注微信公众号</div>
+	            </div>
+	        </li>
+	        <li class="fw_item item_3">
+	            <a class="fw_inner" href="#" target="_blank" title="QQ"></a>
+	        </li>
+	        <li class="fw_item item_4">
+	            <a class="fw_inner" href="#" target="_blank" title="微博"></a>
+	        </li>
+	        <li class="fw_item item_5">
+	            <a class="fw_inner" href="#" target="_blank" title="APP下载"></a>
+	        </li>
+	        
+	    </ul>
+	</div>
+
+	<div class="container-fluid tops">
+		<div class="warp top clearfix">
+			<div class="wel pull-left">欢迎来到明星私募网第三理财超市！</div>
+			<div class="top_l pull-right">
+				<span>
+					<a href="#">登录</a> |
+				    <a href="#">注册</a> |
+				    <a href="#">我的账户</a> |
+				</span>
+				<span>
+					<a href="#">帮助中心</a> |
+					<span class="dropdown">
+						<a href="#" class="top_last" id="webnav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">网站导航 <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="webnav">
+							<li class="dropdown-header">明星私募</li>
+						    <li><a href="#">股票策略</a></li>
+						    <li><a href="#">相对价值</a></li>
+						    <li><a href="#">宏观策略</a></li>
+						    <li><a href="#">事件驱动</a></li>
+						</ul>
+					</span>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid heads bg_fff">
+		<div class="warp clearfix">
+			<div class="logo pull-left">
+				<h1><a href="#"><img src="theme/simu/img/logo.png" alt="明星私募网" title="明星私募网" /></a></h1>
+			</div>
+
+			<div class="head_u pull-right">
+				<a href="#"><span class="glyphicon glyphicon-user head_uico pull-left"></span><span class="font16 pull-left head_user">我的账户</span></a>
+			</div>
+
+			<div class="searchs pull-right">
+				<div class="search">
+					<form>
+						<div class="dropdown search_f">
+							<select class="selectpicker show-tick form-control">
+								<option>私募产品</option>
+								<option>信托产品</option>
+								<option>明星私募</option>
+								<option>理财问答</option>
+								
+							</select>
+						</div>
+						<div class="search_i"><input type="text" placeholder="请输入关键字..." /></div>
+						<div class="search_b"><input type="submit" value="" /><span class="glyphicon glyphicon-search search_bico"></span></div>
+					</form>
+				</div>
+
+				<div class="search_nav">
+					<span>热门搜索：</span>
+					<a href="#">公募基金</a>
+					<a href="#">私募基金</a>
+					<a href="#">阳光私募</a>
+					<a href="#">信托基金</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid warps bg_fff">
+		<div class="
+navs navs_page">
+			<div class="warp">
+				<div class="nav dropdown clearfix">
+					<div class="nav_t pull-left" id="nav_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="icon-list-ul nav_tico"></i><span>私募产品分类</span>
+					</div>
+
+					<ul class="nav_l nav_l_page">
+						<li class="first"><a href="#" class="curr">私募首页</a></li>
+						<li><a href="#">顶级私募<i class="hot pull-right"></i></a></li>
+						<li><a href="#">私募龙虎榜</a></li>
+						<li><a href="#">选基参考</a></li>
+						<li><a href="#">私募产品</a></li>
+						<li><a href="#">私募经理</a></li>
+						<li><a href="#">私募公司</a></li>
+						<li><a href="#">私募评级</a></li>
+						<li><a href="#">私募新闻</a></li>
+						<li><a href="#">理财问答</a></li>
+						<li class="last"><a href="#">私募邦</a></li>
+					</ul>
+					
+					<div class="nav_lists dropdown-menu pull-left" aria-labelledby="nav_dropdown">
+						<ul class="nav_list">
+							<li class="curr"><a href="#">股票策略</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">相对价值</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">宏观策略</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">事件驱动</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">组合基金</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">债券策略</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">管理期货</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">复合策略</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">其它策略</a><i class="icon-chevron-right"></i></li>
+						</ul>
+
+						<div class="nav_listms">
+							<div class="nav_listm">
+								<div class="nav_listm_t">股票策略</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">相对价值</div>
+								<ul class="clearfix">
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">宏观策略</div>
+								<ul class="clearfix">
+									<li><a href="#">宏观策略</a></li>
+									<li><a href="#">宏观策略</a></li>
+									<li><a href="#">宏观策略</a></li>
+									<li><a href="#">宏观策略</a></li>
+									
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">事件驱动</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">组合基金</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">债券策略</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">管理期货</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">复合策略</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">其它策略</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+							
+						</div>
+
+						<div class="appdown clearfix">
+							<img src="theme/simu/images/app1.png" alt="下载明星私募手机APP" title="下载明星私募手机APP" />
+							<span><a href="#">下载明星私募手机APP</a></span>
+						</div>
+
+					</div>
+
+				
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container-fluid">
+		<div class="warp">
+			<ol class="breadcrumb">
+				<li>当前位置</li>
+				<li class="margin_left10"><a href="#">首页</a></li>
+				<li class="active">私募经理内容页</li>
+			</ol>
+
+			<div class="comp_h border bg_fff clearfix">
+				<div class="mg_img border margin_top20 pull-left">
+					<img src="theme/simu/images/mg.png" alt="">
+				</div>
+				<div class="hot_sm_i margin_top20 pull-left">
+					<p><span>陈芳</span></p>
+					<p>公司：<span>淡水泉</span></p>
+					<p>职位：<span>总经理</span></p>
+					<p>背景：<span>公募</span></p>
+					<p>产品数：<span>122</span></p>
+					<p>走访报告：<span>索取</span></p>
+				</div>
+
+				<div class="mana_ht margin_left160 pull-left">旗下最受关注产品</div>
+
+				<div class="hot_sm_i pull-left">
+					<h4><strong>外贸信托-双赢10期(淡水泉)</strong></h4>
+					<p>产品类型：<span>信托</span></p>
+					<p>投资策略：<span>股票策略</span></p>
+					<table class="pro_p_table mana_table2">
+						<tbody>
+							<tr>
+								<td width="70px;"></td>
+								<td width="70px;">收益率</td>
+								<td width="130px;">星级</td>
+							</tr>
+							<tr>
+								<td>近一年</td>
+								<td>47.90%</td>
+								<td><div class="rating margin_left10 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							</tr>
+							<tr>
+								<td>近两年</td>
+								<td>47.90%</td>
+								<td><div class="rating margin_left10 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							</tr>
+							<tr>
+								<td>近三年</td>
+								<td>47.90%</td>
+								<td><div class="rating margin_left10 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="hot_sm_i margin_left160 pull-left">
+					<p>最新净值</p>
+					<p class="color_c400 font24">2.4409</p>
+					<p><a href="#"><img src="theme/simu/img/trend.png" alt="净值走势图"></a><a href="#" class="btn btn6 margin_left20">收益排名</a></p>
+					<p><a href="#" class="btn btn2">立即咨询</a></p>
+					<p class="color_c400 font18 margin_top10">
+						<i class="icon iconfont font24">&#xe617;</i>
+						<span class="margin_left10">4008-100-8888</span>
+					</p>
+				</div>
+			</div>
+
+			<div class="comp_c border border_t margin_top30 bg_fff">
+				<div class="comp_t font16">个人简介</div>
+				<div class="comp_cm">
+					<p>南开大学数学学士、金融学硕士，历任中信证券资产管理部分析师、嘉实基金管理公司基金丰和基金经理、研究总监、机构投资总监、总裁助理。赵军先生精通国内资本市场投资运作，并拥有管理全国社保基金、企业年金、保险机构和银行资金的丰富经验。赵军先生在12年的证券投资管理工作中，历经牛熊市场转换，在公募及阳光私募的过往业绩均排在同业同期的前百分之二十。</p>
+				</div>
+			</div>
+
+			<div class="comp_c border border_t margin_top30 bg_fff">
+				<div class="comp_t font16">旗下所管理的产品 <span class="margin_left20"><input type="radio" id="radio1" checked="checked" name="radio" /> <label for="radio1" class="font14">运行中产品</label> <input type="radio" id="radio2" name="radio" /> <label for="radio2" class="font14">已清算产品</label></span></div>
+				<table class="pro_p_table">
+					<thead>
+						<tr>
+							<th width="60px;">序号</th>
+							<th width="200px;">产品简称</th>
+							<th width="90px;">投资策略</th>
+							<th width="90px;">产品类型</th>
+							<th width="100px;">成立日期</th>
+							<th width="150px;">成立以来收益率(%)↓</th>
+							<th width="130px;">近一年收益率(%)</th>
+							<th width="120px;">近一年评级</th>
+							<th width="90px;">净值曲线</th>
+							<th width="90px;">自选关注</th>
+							<th width="78px;" class="last">预约</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" name="checkbox"> 1 </td>
+							<td><a href="#">平安信托-精英之淡水泉A</a></td>
+							<td>股票策略</td>
+							<td>信托</td>
+							<td>2009-09-21</td>
+							<td><span>121.67</span></td>
+							<td><span>36.95</span></td>
+							<td><div class="rating margin_left5 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							<td>
+								<div class="trend">
+									<div class="trend_h"><a href="#"><img src="theme/simu/img/trend.png" alt="净值走势图" /></a></div>
+									<div class="trend_v">
+										<div id="chart_container" style="height: 300px"></div>
+									</div>
+								</div>
+							</td>
+							<td><a href="#">加入</a></td>
+							<td class="last"><a href="#">预约</a></td>
+						</tr>
+						<tr class="curr">
+							<td><input type="checkbox" name="checkbox"> 2 </td>
+							<td><a href="#">平安信托-精英之淡水泉A</a></td>
+							<td>股票策略</td>
+							<td>信托</td>
+							<td>2009-09-21</td>
+							<td><span>121.67</span></td>
+							<td><span>36.95</span></td>
+							<td><div class="rating margin_left5 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							<td>
+								<div class="trend">
+									<div class="trend_h"><a href="#"><img src="theme/simu/img/trend.png" alt="净值走势图" /></a></div>
+									<div class="trend_v">
+										<div id="chart_container2" style="height: 300px"></div>
+									</div>
+								</div>
+							</td>
+							<td><a href="#">加入</a></td>
+							<td class="last"><a href="#">预约</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="checkbox"> 1 </td>
+							<td><a href="#">平安信托-精英之淡水泉A</a></td>
+							<td>股票策略</td>
+							<td>信托</td>
+							<td>2009-09-21</td>
+							<td><span>121.67</span></td>
+							<td><span>36.95</span></td>
+							<td><div class="rating margin_left5 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							<td><a href="#"><img alt="净值走势图" src="theme/simu/img/trend.png"></a></td>
+							<td><a href="#">加入</a></td>
+							<td class="last"><a href="#">预约</a></td>
+						</tr>
+						<tr class="curr">
+							<td><input type="checkbox" name="checkbox"> 2 </td>
+							<td><a href="#">平安信托-精英之淡水泉A</a></td>
+							<td>股票策略</td>
+							<td>信托</td>
+							<td>2009-09-21</td>
+							<td><span>121.67</span></td>
+							<td><span>36.95</span></td>
+							<td><div class="rating margin_left5 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							<td><a href="#"><img alt="净值走势图" src="theme/simu/img/trend.png"></a></td>
+							<td><a href="#">加入</a></td>
+							<td class="last"><a href="#">预约</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="checkbox"> 1 </td>
+							<td><a href="#">平安信托-精英之淡水泉A</a></td>
+							<td>股票策略</td>
+							<td>信托</td>
+							<td>2009-09-21</td>
+							<td><span>121.67</span></td>
+							<td><span>36.95</span></td>
+							<td><div class="rating margin_left5 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							<td><a href="#"><img alt="净值走势图" src="theme/simu/img/trend.png"></a></td>
+							<td><a href="#">加入</a></td>
+							<td class="last"><a href="#">预约</a></td>
+						</tr>
+						<tr class="curr">
+							<td><input type="checkbox" name="checkbox"> 2 </td>
+							<td><a href="#">平安信托-精英之淡水泉A</a></td>
+							<td>股票策略</td>
+							<td>信托</td>
+							<td>2009-09-21</td>
+							<td><span>121.67</span></td>
+							<td><span>36.95</span></td>
+							<td><div class="rating margin_left5 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div></td>
+							<td><a href="#"><img alt="净值走势图" src="theme/simu/img/trend.png"></a></td>
+							<td><a href="#">加入</a></td>
+							<td class="last"><a href="#">预约</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="comp_c border margin_top30 bg_fff">
+				
+				<div class="comp_cm2 clearfix">
+					<p class="pull-left"><a href="#">对比</a>(请在需要进行对比的基金前面打"√"，最多可选2只基金。)</p>
+					<p class="pull-right"><span class="color_c400">※</span> 为方便投资者比较，私募排排网将净值单位为100的基金统一调整为1元，并以<span class="color_c400">※</span>标识。</p>
+				</div>
+			</div>
+
+			<div class="nw2 border border_t bg_fff margin_top30 pull-left">
+				<div class="nw_t color_c400">相关资讯</div>
+				<ul class="nw_list">
+					<li><i class="icon-star"></i><a href="#">源实资产：特别的量化产品，特别源实资产：特别的量化产品</a><span>2015-09-09</span></li>
+					<li><i class="icon-star"></i><a href="#">源实资产：特别的量化产品，特别源实资产：特别的量化产品</a><span>2015-09-09</span></li>
+					<li><i class="icon-star"></i><a href="#">源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+					<li><i class="icon-star"></i><a href="#">源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+					<li><i class="icon-star"></i><a href="#">源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+					<li><i class="icon-star"></i><a href="#">源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+				</ul>
+			</div>
+
+			<div class="nw3 border border_t bg_fff margin_top30 margin_left20 pull-left">
+				<div class="nw_t color_c400">热门投资顾问 <span class="font14 pull-right"><a href="#">更多</a></span></div>
+				<div id="nw3" class="carousel slide" data-ride="carousel">
+					  
+				  	<ol class="carousel-indicators">
+					  	<li data-target="#nw3" data-slide-to="0" class="active"></li>
+					  	<li data-target="#nw3" data-slide-to="1"></li>
+				  	</ol>
+
+					  
+				  	<div class="carousel-inner" role="listbox">
+				    	<div class="item active">
+				    		<a href="#"><img src="theme/simu/images/nav1.png" alt="..." width="338" /></a>
+				    	</div>
+				    	<div class="item">
+				    		<a href="#"><img src="theme/simu/images/nav1.png" alt="..." width="338" /></a>
+				    	</div>
+
+				 	 </div>
+					 
+					  <a class="left carousel-control" href="#nw3" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#nw3" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+
+
+
+	<div class="container-fluid foots margin_top30">
+		<div class="warp">
+			<ol class="foot_l clearfix">
+				<li>
+					<h3>关于我们</h3>
+					<ul>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">管理团队</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">合作伙伴</a></li>
+						<li><a href="#">人才招聘</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">网站地图</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>菜单导航</h3>
+					<ul>
+						<li><a href="#">顶级私募</a></li>
+						<li><a href="#">私募龙虎榜</a></li>
+						<li><a href="#">选基参考</a></li>
+						<li><a href="#">私募产品</a></li>
+						<li><a href="#">私募经理</a></li>
+						<li><a href="#">私募公司</a></li>
+						<li><a href="#">私募新闻</a></li>
+						<li><a href="#">理财问答</a></li>
+						<li><a href="#">私募邦</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>服务导航</h3>
+					<ul>
+						<li><a href="#">私人定制</a></li>
+						<li><a href="#">认识明星私募网</a></li>
+						<li><a href="#">新手指引</a></li>
+						<li><a href="#">产品收录</a></li>
+						
+					</ul>
+				</li>
+				<li>
+					<h3>关注我们</h3>
+					<ul class="foot_l_i">
+						<li><a href="#"><i class="icon iconfont">&#xe603;</i></a></li>
+						<li><a href="#"><i class="icon iconfont">&#xe602;</i></a></li>
+						<li><a href="#"><i class="icon iconfont">&#xe607;</i></a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>APP下载</h3>
+					<ul class="foot_l_i">
+						<li><a href="#"><i class="icon iconfont">&#xe604;</i></a></li>
+						<li><a href="#"><i class="icon iconfont">&#xe605;</i></a></li>
+					</ul>
+				</li>
+				<li style="padding-right: 0px;">
+					<h3>客服热线</h3>
+					
+					<ul class="foot_l_i2 clearfix">
+						<li><i class="icon iconfont">&#xe606;</i></li>
+						<li>4008-888-222<br />021-88882222</li>
+						
+					</ul>
+					<h3>在线咨询</h3>
+					<ul class="foot_l_i2 foot_l_i3 clearfix">
+						<li><a href="#"><i class="icon iconfont">&#xe609;</i>在线咨询</a> <span>08:00 ~ 23:00</span></li>
+					</ul>
+				</li>
+			</ol>
+
+			
+
+		</div>
+	</div>
+
+	<div class="container-fluid foot_bs">
+		<div class="warp foot_b">
+			<p>&copy; 2015 广州明星私募网 版权所有 <a href="http://www.miitbeian.gov.cn">粤ICP备13000033号</a></p>
+			<p>投资有风险，理财需谨慎</p>
+			<p><img src="theme/simu/images/verify_1.png" alt="" title="" />&nbsp;&nbsp;<img src="theme/simu/images/verify_1.png" alt="" title="" />&nbsp;&nbsp;<img src="theme/simu/images/verify_1.png" alt="" title="" /></p>
+		</div>
+	</div>
+</body>
+</html>

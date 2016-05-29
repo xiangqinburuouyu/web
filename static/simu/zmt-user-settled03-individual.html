@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>个人申请-入驻流程-明星联盟</title>
+<link rel="stylesheet" href="theme/zimeiti/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="theme/zimeiti/cropper/css/cropper.min.css" />
+<link rel="stylesheet" href="theme/zimeiti/cropper/css/main.css" />
+<link rel="stylesheet" href="theme/zimeiti/bootstrap-file/css/fileinput.min.css" media="all" />
+<link rel="stylesheet" href="theme/zimeiti/css/user.css">
+<!--[if lt IE 9]>
+    <script src="theme/zimeiti/bootstrap-lib/html5shiv-3.7.2.min.js"></script>
+    <script src="theme/zimeiti/bootstrap-lib/respond-1.4.2.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body>
+<div class="header">
+	<div class="h_center user_warp1">
+    	<div class="logo"><img src="theme/zimeiti/images/zmt-h_03.png"></div>
+        <div class="user_h01 pull-left">互联网资讯第一发布平台</div>	
+        <span class="user_w01"><a href="javascript:;" class="user_n01">明星私募用户</a> | <a href="#">登录</a> | <a href="#">明星联盟</a> | <a href="#">明星私募网</a></span>
+        
+    </div>
+</div>
+
+<div class="warps bg_e6e6">
+    <div class="warp user_type clearfix">
+        <div class="user_type1">
+            <span>01</span>
+            <p>账号注册</p>
+        </div>
+        <div class="user_type_line"></div>
+        <div class="user_type1">
+            <span>02</span>
+            <p>选择类型</p>
+        </div>
+        <div class="user_type_line"></div>
+        <div class="user_type1 user_type1h">
+            <span>03</span>
+            <p>入驻资料</p>
+        </div>
+    </div>
+</div>
+
+<div class="warp margin_top30">
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="aet_t aet_t1"><span>个人资料</span></div>
+        </div>
+    </div>
+    <div class="sett3 margin_top30" id="crop-avatar">
+        <form class="defForm form-horizontal">
+            <div class="form-group">
+                <label for="alliaName" class="col-sm-2 control-label"><span>*</span>联盟号名称</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="alliaName" name="alliaName" placeholder="联盟号名称">
+                    <span class="help-block">2-10个字，请勿使用包含特殊符号或含有明显营销推广意图的媒体名</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alliaSigna" class="col-sm-2 control-label"><span>*</span>联盟号签名</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="alliaSigna" name="alliaSigna" placeholder="联盟号签名">
+                    <span class="help-block">2-20个字，个人签名，请勿使用包含特殊符号或含有明显营销推广意图的媒体名</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alliaBrief" class="col-sm-2 control-label"><span>*</span>联盟号简介</label>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" rows="3" id="alliaBrief" name="alliaBrief" placeholder="联盟号简介"></textarea>
+                    <span class="help-block">10-100个字，专注方向、行业背景、过往经历、个人感悟等，要求内容完整通顺，无特殊符号，请勿添加多种联系方式</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alliaIcon" class="col-sm-2 control-label"><span>*</span>联盟号头像</label>
+                <div class="col-sm-3">
+                    <div class="sett3_img avatar-view">
+                        <img src="theme/simu/images/mg.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="col-sm-5">
+                    <span class="help-block">要求清晰、健康、代表品版形象请勿使用二维码，最大300KB，200X200像素</span>
+                    <button type="button" class="btn btn01 btn02 avatar-view" style="height:42px; margin-left:0;" id="alliaIcon">上传</button>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alliaDomain" class="col-sm-2 control-label"><span>*</span>领域</label>
+                <div class="col-sm-10">
+                    <select type="text" class="form-control" id="alliaDomain" name="alliaDomain" >
+                        <option value="">--请选择--</option>
+                        <option value="1">文化</option>
+                        <option value="2">娱乐</option>
+                        <option value="3">体育</option>
+                        <option value="4">财经</option>
+                    </select>
+                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="appliName" class="col-sm-2 control-label"><span>*</span>申请者姓名</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="appliName" name="appliName" placeholder="申请者姓名">
+                    <span class="help-block">权益描述：机构帐号收益仅归属机构帐号申请者所有</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="appliIDCard" class="col-sm-2 control-label"><span>*</span>申请者身份证号</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="appliIDCard" name="appliIDCard" placeholder="申请者身份证号">
+                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alliaIDCardPic" class="col-sm-2 control-label"><span>*</span>申请者身份证上传</label>
+                <div class="col-sm-3">
+                    <div class="sett3_img">
+                        <img src="theme/simu/images/idcardpic.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="col-sm-4">
+                    <span class="help-block">照片形式请参考示例进行拍摄,身份证上的信息清晰可见,身份证号码必须清晰可识别，大小不超过2M</span>
+                    <!--<button type="button" class="btn btn01 btn02" id="alliaIDCardPic">上传</button>-->
+
+                </div>
+                
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-7">
+                    <input type="file" name="IDCardImg" class="file scanCardImg" data-overwrite-initial="false" data-min-file-count="1">
+                </div>
+            </div>
+
+            <div class="form-group verMaterial">
+                <label for="weixin" class="col-sm-2 control-label"><span>*</span>辅助材料</label>
+                <div class="col-sm-10">
+                    
+                    <span class="help-block">请提供您本人的专栏、博客或微信公众号等信息，我们会以您提供的文章做为参考依据，审核您申请的帐号。丰富以下内容将有助于您的账号通过审核。<span class="verMaterialtxt">注：至少填写一项，每项至多50个字。</span></span>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label for="weixin" class="col-sm-2 control-label">微信公众号</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="weixin" name="weixin" placeholder="微信公众号">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label for="blogAddre" class="col-sm-2 control-label">博客地址</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="blogAddre" name="blogAddre" placeholder="http://">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label for="columAddre" class="col-sm-2 control-label">专栏地址</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="columAddre" name="columAddre" placeholder="http://">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label for="reporterCard" class="col-sm-2 control-label">记者证号</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="reporterCard" name="reporterCard" placeholder="记者证号">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="appliPhone" class="col-sm-2 control-label"><span>*</span>作者电话</label>
+                <div class="col-sm-10" style="padding-left:0;">
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="appliPhone" name="appliPhone" placeholder="作者电话">
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn01 btn02" >获取验证码</button>
+                    </div>
+                    
+                </div>
+                
+
+                <div class="col-sm-offset-2 col-sm-10 margin_top10" style="padding-left:0;">
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" name="phoneVerCode" placeholder="短信验证码">
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn01 btn02" >提交验证码</button>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label"><span>*</span>联系邮箱</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="联系邮箱">
+                    <span class="help-block">请填写本人常用邮箱，该邮箱将作为重要的通知邮箱使用</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="otherContact" class="col-sm-2 control-label">其他联系方式</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="otherContact" name="otherContact" placeholder="ＱＱ、微信等">
+                    <span class="help-block">ＱＱ、微信等</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="alliaAgreem"> 同意 <a href="#">明星联盟号媒体平台用户协议</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="button" class="btn btn01 btn02 btn02_b">上一步</button><button type="submit" class="btn btn01 btn02">提交</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form class="defForm avatar-form" action="crop.php" enctype="multipart/form-data" method="post">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" type="button">&times;</button>
+                            <h4 class="modal-title" id="avatar-modal-label">更换头像</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="avatar-body">
+
+                                <!-- Upload image and data -->
+                                <div class="form-group">
+                                <div class="avatar-upload">
+                                    <input class="avatar-src" name="avatar_src" type="hidden"/>
+                                    <input class="avatar-data" name="avatar_data" type="hidden"/>
+                                    <label for="avatarInput">头像上传</label>
+                                    <input class="avatar-input" id="avatarInput" name="avatar_file" type="file"/>
+                                </div>
+                                </div>
+
+                                <!-- Crop and preview -->
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="avatar-wrapper"></div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="avatar-preview preview-lg"></div>
+                                        <div class="avatar-preview preview-md"></div>
+                                        <div class="avatar-preview preview-sm"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row avatar-btns">
+                                    <div class="col-md-9">
+                                        <div class="btn-group">
+                                            <button class="btn btn-primary" data-method="rotate" data-option="-90" type="button" title="向左旋转 90 ℃">向左旋转</button>
+                                            <button class="btn btn-primary" data-method="rotate" data-option="-15" type="button">-15℃</button>
+                                            <button class="btn btn-primary" data-method="rotate" data-option="-30" type="button">-30℃</button>
+                                            <button class="btn btn-primary" data-method="rotate" data-option="-45" type="button">-45℃</button>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn btn-primary" data-method="rotate" data-option="90" type="button" title="向右旋转 90 ℃">向右旋转</button>
+                                            <button class="btn btn-primary" data-method="rotate" data-option="15" type="button">15℃</button>
+                                            <button class="btn btn-primary" data-method="rotate" data-option="30" type="button">30℃</button>
+                                            <button class="btn btn-primary" data-method="rotate" data-option="45" type="button">45℃</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="btn btn-primary btn-block avatar-save" type="submit">完成</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                          <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+
+    </div>
+</div>
+
+
+<div class="zmt_footer">
+	<div class="foot_center">
+        <div class="user_f warps clearfix">
+            <div class="user_flogo">
+                <img src="theme/zimeiti/images/zmt-h_03.png" alt="">
+            </div>
+        	<div class="f_left">
+                <span>反馈建议：<a href="">service@simu.com</a></span>
+                <span>在线咨询：<a href="">2642162962</a></span>
+                <span>客服电话：020-38369009</span>
+            </div>
+        </div>
+        
+        
+        <span class="copyright">© 2015  广州明星私募金融信息服务有限公司版权所有  <a href="http://www.miitbeian.gov.cn/">粤ICP备13055888号</a></span>	
+    </div>
+</div>
+
+<script src="theme/zimeiti/js/jquery.min.js"></script>
+<script src="theme/zimeiti/bootstrap/js/bootstrap.min.js"></script>
+<script src="theme/zimeiti/bootstrap-lib/bootstrapValidator.min.js"></script>
+<script src="theme/zimeiti/cropper/js/cropper.min.js"></script>
+<script src="theme/zimeiti/cropper/js/main.js"></script>
+<script src="theme/zimeiti/bootstrap-file/js/fileinput.min.js"></script>
+<script src="theme/zimeiti/bootstrap-file/js/fileinput_locale_zh.js"></script>
+<script src="theme/zimeiti/js/comm-user.js"></script>
+
+
+</body>
+</html>

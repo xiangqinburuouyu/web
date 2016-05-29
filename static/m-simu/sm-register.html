@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>用户注册-明星私募网-移动端</title>
+    <link rel="stylesheet" href="themes/m-simu/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="themes/m-simu/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="themes/m-simu/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link rel="stylesheet" href="themes/m-simu/css/theme.css"/>
+
+
+    <!--[if lt IE 9]>
+    <script src="themes/m-simu/js/html5shiv-3.7.2.min.js"></script>
+    <script src="themes/m-simu/js/respond-1.4.2.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+<div id="head">
+
+</div>
+
+<div class="container">
+    <div class="row h_w">
+        <div class="col-xs-12 h_t2">注册</div>
+
+        <div class="col-xs-12 margin_top20">
+            <form class="defForm form-horizontal">
+                <div class="form-group">
+                    <label for="username" class="col-sm-3 control-label"><span>* </span> 用户名：</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="请输入2~30个由中文、字母、数字、_(下划线) 组成的名称！如:simu_01">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="col-sm-3 control-label"><span>* </span> 手机号码：</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="请输入11位手机号码！">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label"><span>* </span> 密码：</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="请输入6-18位长度密码">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword" class="col-sm-3 control-label"><span>* </span> 确认密码：</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="请再次输入密码">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="varCode" class="col-sm-3 control-label"><span>* </span> 手机验证码：</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="phoneVerCode" name="phoneVerCode" placeholder="请输入6位手机验证码">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="verCode" class="col-sm-3 control-label"><span>* </span> 验证码：</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="verCode" name="verCode" placeholder="验证码">
+                    </div>
+                    <div class="col-xs-4 col-sm-3">
+                        <img class="regi_img" id="verCodeImg" name="verCodeimg" onclick="changSrc('#verCodeImg','http://www.mxsimu.com/validate_code?'+new Date().getTime());" src="themes/m-simu/images/ad1.png" alt="验证码" />
+                    </div>
+                    <div class="col-xs-5 col-sm-3 margin_top10">看不清，<a href="javascript:;" onclick="changSrc('#verCodeImg','http://www.mxsimu.com/validate_code?'+new Date().getTime());">换一张</a></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10 checkbox">
+                        <label>
+                            <input type="checkbox" name="checkbox"> 同意“<span class="color_c400">服务条款</span>”和“<span class="color_c400">用户须知</span>”、“<span class="color_c400">隐私权相关政策</span>”
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="form-group col-sm-12">
+
+                    <button type="submit" class="btn btn2">提交注册</button>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div id="foot"></div>
+
+<script src="themes/m-simu/js/jquery.min.js"></script>
+<script src="themes/m-simu/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="themes/m-simu/js/unslider.min.js"></script>
+<script src="themes/m-simu/js/jquery.event.swipe.js"></script>
+<script src="themes/m-simu/js/jquery.event.move.js"></script>
+<script src="themes/m-simu/js/bootstrapValidator.min.js"></script>
+<script src="themes/m-simu/js/comm.js"></script>
+<script src="themes/m-simu/js/banner.js"></script>
+<script src="themes/m-simu/js/register.js"></script>
+<script>
+
+	$( "#head" ).load( "header2.html");
+    $( "#foot" ).load( "footer.html");
+
+
+</script>
+
+</body>
+</html>

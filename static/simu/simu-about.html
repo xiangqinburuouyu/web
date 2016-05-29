@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>关于我们</title>
+	<link href="theme/simu/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="theme/simu/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="theme/simu/bootstrap-select-dist/css/bootstrap-select.min.css">
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="theme/simu/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css">
+	<![endif]-->
+	<link rel="stylesheet" href="theme/simu/css/theme.css" />
+	
+
+	<!--[if lt IE 9]>
+	<script src="theme/simu/js/html5shiv-3.7.2.min.js"></script>
+    <script src="theme/simu/js/respond-1.4.2.min.js"></script>
+    <![endif]-->
+	<script src="theme/simu/js/require.min.js"></script>
+	<script src="theme/simu/js/require-config.js"></script>
+
+	<script>
+		require( ["jquery", "bootstrap", "jquery.fullpage", "alljs"],
+			function() {
+				
+				$('#fullpage').fullpage({
+			        'verticalCentered': false,
+			        'css3': true,
+			        'sectionsColor': ['#c40000', '#0A71F6', '#254587', '#695684','#f60000','#a90000'],
+			        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+			        'menu':'#menu',
+			        'navigation':'true'
+			    });
+
+				$(".manager-us").hover(function() {
+					$(this).siblings().stop().animate({"width":"323%"},400);
+					$(this).children().css({"z-index":"2"});
+				}, function() {
+					$(this).siblings().stop().animate({"width":"0%"},1);
+					$(this).children().css({"z-index":"0"});
+				});
+				$(".manager-us").hover(function() {
+					$(this).siblings(".detail-right").stop().animate({"left":"-223%","width":"324%"},400);
+					$(this).children().css({"z-index":"2"});
+				}, function() {
+					$(this).siblings(".detail-right").stop().animate({"left":"95%","width":"0%"},1);
+					$(this).children().css({"z-index":"0"});
+				});
+				
+
+			}
+		);
+
+	</script>
+
+
+</head>
+<body>
+	<div class="container-fluid about_heads">
+		<div class="about_head">
+			<div class="pull-left">
+				<h1>
+					<a href="#"><img src="theme/simu/img/about_logo.png" alt="" /></a>
+				</h1>
+			</div>
+			<ul class="about_nav pull-left" id="menu">
+				<li class="active" data-menuanchor="page1"><a href="#page1">关于我们</a></li>
+				<li data-menuanchor="page2"><a href="#page2">管理团队</a></li>
+				<li data-menuanchor="page3"><a href="#page3">媒体报道</a></li>
+				<li data-menuanchor="page4"><a href="#page4">合作伙伴</a></li>
+				<li data-menuanchor="page5"><a href="#page5">人才招聘</a></li>
+				<li data-menuanchor="page6"><a href="#page6">联系我们</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+
+	<div id="fullpage">
+	    <div class="section section1">
+	    	<div class="warp about_warp">
+	    		<div class="about_log">
+	    			<a href="#"><img src="theme/simu/img/about_logo2.png" alt="" /></a>
+	    		</div>
+	    		<h3 class="color_c400">我们是一家综合型的互联网投资理财平台，是您的投资理财精品超市</h3>
+	    		<div class="about_cont">
+	    			<p>2000多万投资者，9万余名理财顾问，破200亿交易规模是我们傲人的战绩基金，票据，小贷，股票，期货，外汇，私募，信托，资管，投研，问答我们的业务涵盖理财服务各个层次，各个领域。一站式综合性理财服务是我们的追求</p>
+	    			<p>任何人都能在明星私募实现财富增值明星私募成立于2012年，隶属于广州市明星私募网络科技有限公司明星私募们坚持不懈，努力让您的投资理财更安全，更高效，更简单</p>
+	    		</div>
+	    	</div>
+			<a class="menu_down" href="#page2"><span></span></a>
+	    </div>
+	    <div class="section section2">
+	    	<div class="warp about_warp">
+	    		<ul class="module clearfix">
+	    			<li>
+	    				<div class="manager-us">
+	                        <img src="theme/simu/images/ad1.png" alt="">
+	                        <p class="manager-center"><b>陈方</b>&nbsp;&nbsp;CEO/联合创始人</p>
+	                    </div>
+	                    <div class="manager-detail">
+	                        <p>复旦大学硕士；<br>前中国平安投资副总裁；<br/>凯雷复星高级投资总监；<br/>中国注册会计师。</p>
+	                    </div>
+	    			</li>
+	    			<li>
+	    				<div class="manager-us">
+	                        <img src="theme/simu/images/ad1.png" alt="">
+	                        <p class="manager-center"><b>陈方</b>&nbsp;&nbsp;CEO/联合创始人</p>
+	                    </div>
+	                    <div class="manager-detail">
+	                        <p>复旦大学硕士；<br>前中国平安投资副总裁；<br/>凯雷复星高级投资总监；<br/>中国注册会计师。</p>
+	                    </div>
+	    			</li>
+	    			<li>
+	    				<div class="manager-us">
+	                        <img src="theme/simu/images/ad1.png" alt="">
+	                        <p class="manager-center"><b>陈方</b>&nbsp;&nbsp;CEO/联合创始人</p>
+	                    </div>
+	                    <div class="manager-detail">
+	                        <p>复旦大学硕士；<br>前中国平安投资副总裁；<br/>凯雷复星高级投资总监；<br/>中国注册会计师。</p>
+	                    </div>
+	    			</li>
+	    			<li>
+	    				<div class="manager-us">
+	                        <img src="theme/simu/images/ad1.png" alt="">
+	                        <p class="manager-center"><b>陈方</b>&nbsp;&nbsp;CEO/联合创始人</p>
+	                    </div>
+	                    <div class="manager-detail detail-right">
+	                        <p>复旦大学硕士；<br>前中国平安投资副总裁；<br/>凯雷复星高级投资总监；<br/>中国注册会计师。</p>
+	                    </div>
+	    			</li>
+	    			<li>
+	    				<div class="manager-us">
+	                        <img src="theme/simu/images/ad1.png" alt="">
+	                        <p class="manager-center"><b>陈方</b>&nbsp;&nbsp;CEO/联合创始人</p>
+	                    </div>
+	                    <div class="manager-detail detail-right">
+	                        <p>复旦大学硕士；<br>前中国平安投资副总裁；<br/>凯雷复星高级投资总监；<br/>中国注册会计师。</p>
+	                    </div>
+	    			</li>
+	    			<li>
+	    				<div class="manager-us">
+	                        <img src="theme/simu/images/ad1.png" alt="">
+	                        <p class="manager-center"><b>陈方</b>&nbsp;&nbsp;CEO/联合创始人</p>
+	                    </div>
+	                    <div class="manager-detail detail-right">
+	                        <p>复旦大学硕士；<br>前中国平安投资副总裁；<br/>凯雷复星高级投资总监；<br/>中国注册会计师。</p>
+	                    </div>
+	    			</li>
+	    			<li>
+	    				<div class="manager-us">
+	                        <img src="theme/simu/images/ad1.png" alt="">
+	                        <p class="manager-center"><b>陈方</b>&nbsp;&nbsp;CEO/联合创始人</p>
+	                    </div>
+	                    <div class="manager-detail">
+	                        <p>复旦大学硕士；<br>前中国平安投资副总裁；<br/>凯雷复星高级投资总监；<br/>中国注册会计师。</p>
+	                    </div>
+	    			</li>
+	    		</ul>
+	    	</div>
+
+			<a class="menu_down" href="#page3"><span></span></a>
+	    </div>
+	    <div class="section section3">
+	    	<div class="warp about_warp">
+	    		<div class="slide">
+		    		<ul class="about_mt_list">
+		    			<li class="clearfix">
+		    				<div class="about_mt_l pull-left">
+		    					<a href="#"><img src="theme/simu/images/nav1.png" alt="" /></a>
+		    				</div>
+		    				<div class="about_mt_r pull-left">
+		    					<h4><a href="#">阳光私募基金的合法、合规性</a></h4>
+		    					<p>通过信托平台发行的阳光私募基金运作较为正规，信托公司负责监管资金的流向与用途，阳光私募基金的每个操作均须遵守信托合同的规定。基金管理人只负责证券投资组合的管理，资金由银行托管，基金净值由信托公司、商业银行、证券公司（期货公司）三方核对无误后核算，保证资金的安全性和净值的准确性。信托制阳光私募基金受银监会的监管，不存在资金非法挪用的可能，投资者可以放心投资。同时，2013年6月1日，阳光私募基金被纳入基金法，正式承认私募基金的法律地位。
+		    						<a href="#">查看详情>></a>
+		    					</p>
+		    				</div>
+		    			</li>
+		    			<li class="clearfix">
+		    				<div class="about_mt_l pull-left">
+		    					<a href="#"><img src="theme/simu/images/nav1.png" alt="" /></a>
+		    				</div>
+		    				<div class="about_mt_r pull-left">
+		    					<h4><a href="#">阳光私募基金的合法、合规性</a></h4>
+		    					<p>通过信托平台发行的阳光私募基金运作较为正规，信托公司负责监管资金的流向与用途，阳光私募基金的每个操作均须遵守信托合同的规定。基金管理人只负责证券投资组合的管理，资金由银行托管，基金净值由信托公司、商业银行、证券公司（期货公司）三方核对无误后核算，保证资金的安全性和净值的准确性。信托制阳光私募基金受银监会的监管，不存在资金非法挪用的可能，投资者可以放心投资。同时，2013年6月1日，阳光私募基金被纳入基金法，正式承认私募基金的法律地位。
+		    						<a href="#">查看详情>></a>
+		    					</p>
+		    				</div>
+		    			</li>
+		    			<li class="clearfix">
+		    				<div class="about_mt_l pull-left">
+		    					<a href="#"><img src="theme/simu/images/nav1.png" alt="" /></a>
+		    				</div>
+		    				<div class="about_mt_r pull-left">
+		    					<h4><a href="#">阳光私募基金的合法、合规性</a></h4>
+		    					<p>通过信托平台发行的阳光私募基金运作较为正规，信托公司负责监管资金的流向与用途，阳光私募基金的每个操作均须遵守信托合同的规定。基金管理人只负责证券投资组合的管理，资金由银行托管，基金净值由信托公司、商业银行、证券公司（期货公司）三方核对无误后核算，保证资金的安全性和净值的准确性。信托制阳光私募基金受银监会的监管，不存在资金非法挪用的可能，投资者可以放心投资。同时，2013年6月1日，阳光私募基金被纳入基金法，正式承认私募基金的法律地位。
+		    						<a href="#">查看详情>></a>
+		    					</p>
+		    				</div>
+		    			</li>
+		    			
+		    		</ul>
+	    		</div>
+
+	    		<div class="slide">
+					<ul class="about_mt_list">
+		    			<li class="clearfix">
+		    				<div class="about_mt_l pull-left">
+		    					<a href="#"><img src="theme/simu/images/nav1.png" alt="" /></a>
+		    				</div>
+		    				<div class="about_mt_r pull-left">
+		    					<h4><a href="#">阳光私募基金的合法、合规性</a></h4>
+		    					<p>通过信托平台发行的阳光私募基金运作较为正规，信托公司负责监管资金的流向与用途，阳光私募基金的每个操作均须遵守信托合同的规定。基金管理人只负责证券投资组合的管理，资金由银行托管，基金净值由信托公司、商业银行、证券公司（期货公司）三方核对无误后核算，保证资金的安全性和净值的准确性。信托制阳光私募基金受银监会的监管，不存在资金非法挪用的可能，投资者可以放心投资。同时，2013年6月1日，阳光私募基金被纳入基金法，正式承认私募基金的法律地位。
+		    						<a href="#">查看详情>></a>
+		    					</p>
+		    				</div>
+		    			</li>
+		    			<li class="clearfix">
+		    				<div class="about_mt_l pull-left">
+		    					<a href="#"><img src="theme/simu/images/nav1.png" alt="" /></a>
+		    				</div>
+		    				<div class="about_mt_r pull-left">
+		    					<h4><a href="#">阳光私募基金的合法、合规性</a></h4>
+		    					<p>通过信托平台发行的阳光私募基金运作较为正规，信托公司负责监管资金的流向与用途，阳光私募基金的每个操作均须遵守信托合同的规定。基金管理人只负责证券投资组合的管理，资金由银行托管，基金净值由信托公司、商业银行、证券公司（期货公司）三方核对无误后核算，保证资金的安全性和净值的准确性。信托制阳光私募基金受银监会的监管，不存在资金非法挪用的可能，投资者可以放心投资。同时，2013年6月1日，阳光私募基金被纳入基金法，正式承认私募基金的法律地位。
+		    						<a href="#">查看详情>></a>
+		    					</p>
+		    				</div>
+		    			</li>
+		    			<li class="clearfix" style="text-align:center;">
+		    				<a href="#" class="btn btn7">点击进入媒体报道>></a>
+		    			</li>
+
+		    			
+		    		</ul>
+        		</div>
+
+	    	</div>
+
+	        <a class="menu_down" href="#page4"><span></span></a>
+	    </div>
+
+	    <div class="section section4">
+			<div class="warp about_warp">
+	    		<ul class="about_hez clearfix">
+	    			<li><a href="#"><img src="theme/simu/images/ad1.png" alt=""></a></li>
+	    			<li><a href="#"><img src="theme/simu/images/ad1.png" alt=""></a></li>
+	    			<li><a href="#"><img src="theme/simu/images/ad1.png" alt=""></a></li>
+	    			<li><a href="#"><img src="theme/simu/images/ad1.png" alt=""></a></li>
+	    			<li><a href="#"><img src="theme/simu/images/ad1.png" alt=""></a></li>
+	    			<li><a href="#"><img src="theme/simu/images/ad1.png" alt=""></a></li>
+	    		</ul>
+	    	</div>
+	    	<a class="menu_down" href="#page5"><span></span></a>
+	    </div>
+
+	    <div class="section section5">
+			<div class="warp about_warp">
+	    		<ul class="about_rc">
+	    			<li>
+	    				<p>
+	    					<button class="btn btn6" data-target="#collapse1" data-toggle="collapse">前端开发工程师</button>
+	    					<button class="btn btn6" data-target="#collapse2" data-toggle="collapse">渠道拓展经理</button>
+	    				</p>
+	    				<div class="collapse in" id="collapse1">
+							<div class="well">
+						    	<h4>前端开发工程师</h4>
+						    	<h5>职位描述：</h5>
+						    	<p>1、负责公司现有产品优化和日常运营；</p>
+						    	<p>2、新产品研发和前端新技术的应用，带来更好的用户体验。</p>
+						    	<h5>职位说明：</h5>
+						    	<p>1、精通html，css，对盒子模型有深刻理解；</p>
+						    	<p>2、熟知各主流浏览器（ie6+/Chrome/Firefox/Safari）兼容性问题及相应解决方案；</p>
+						    	<h5>福利待遇：</h5>
+						    	<p>1、长期激励：公司期权；</p>
+						    	<p>2、福利：享受法定节假日、公司婚假、产假，相关社保，公司旅游等。</p>
+							</div>
+						</div>
+						<div class="collapse" id="collapse2">
+							<div class="well">
+						    	<h4>渠道拓展经理</h4>
+						    	<h5>职位描述：</h5>
+						    	<p>1、负责与第三方财富管理、私募投资公司等金融机构以及各种机构客户渠道、高端会所、俱乐部等建立长期、良好、稳定的合作关系；</p>
+						    	<p>2、完善渠道布局，建立产品分销合作关系，推动渠道销售，负责渠道客户关系的开发与维护，不断扩大渠道份额；</p>
+						    	<p>3、积极与各渠道展开洽谈，制定销售策略及业务拓展计划，完成公司既定渠道建设目标和销售任务；</p>
+						    	<p>4、负责公司渠道部门的长期建设及部门员工日常工作安排、指导及管理；</p>
+						    	<p>5、及时反馈市场状况，适时参与公司决策。</p>
+						    	
+						    	<h5>职位说明：</h5>
+						    	<p>    1、专科及以上学历，市场营销、金融、经济管理等专业为佳；有金融机构渠道者条件可适当放宽；</p>
+						    	<p>2、三年以上工作经验，其中三年以上团队管理经验，有金融领域渠道开发、维护等领域工作背景；</p>
+						    	<p>3、良好的沟通、人际交往及维护客户关系的能力，较强的商务谈判技巧；</p>
+						    	<h5>福利待遇：</h5>
+						    	<p>1、长期激励：公司期权；</p>
+						    	<p>2、福利：享受法定节假日、公司婚假、产假，相关社保，公司旅游等。</p>
+							</div>
+						</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    	<a class="menu_down" href="#page6"><span></span></a>
+	    </div>
+
+	    <div class="section section6">
+			<div class="warp about_warp">
+	    		
+	    		<div class="about_cont">
+	    			<p class="about_adrr color_c400"><i class="icon-map-marker"></i>地址：广东省广州市</p>
+	    			<p class="about_tel color_c400"><i class="icon-phone-sign"></i>电话：010-12345678</p>
+	    			<p class="about_email color_c400"><i class="icon-envelope-alt"></i>邮箱：service@simu.com</p>
+	    		</div>
+	    	</div>
+	    	
+	    </div>
+
+	</div>
+
+	<div class="container-fluid about_foots">
+		<div class="about_foot">
+			© 2015 广州明星私募金融信息服务有限公司版权所有 <a href="http://www.miitbeian.gov.cn/">粤ICP备13055888号</a> 投资有风险，理财需谨慎
+		</div>
+	</div>
+	
+</body>
+</html>

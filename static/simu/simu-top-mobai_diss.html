@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>墨白专题</title>
+	<link href="theme/simu/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="theme/simu/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="theme/simu/bootstrap-select-dist/css/bootstrap-select.min.css">
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="theme/simu/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css">
+	<![endif]-->
+	<link rel="stylesheet" href="theme/simu/css/spe-theme.css" />
+	
+
+	<!--[if lt IE 9]>
+	<script src="theme/simu/js/html5shiv-3.7.2.min.js"></script>
+    <script src="theme/simu/js/respond-1.4.2.min.js"></script>
+    <![endif]-->
+    <script src="theme/simu/js/require.min.js"></script>
+	<script src="theme/simu/js/require-config.js"></script>
+
+	<script src="theme/simu/js/simu-com-spe.js"></script>
+
+</head>
+<body>
+
+<div class="right_fw">
+    <ul class="fw_list">
+        <li class="fw_item item_1">
+            <a class="fw_inner" href="javascript:;" title="客服"></a>
+            
+        </li>
+        <li class="fw_item item_2">
+            <a class="fw_inner" href="#" target="_blank" title="微信"></a>
+            <div class="fw_code">
+                <div class="fw_img"><img src="theme/simu/images/qc.png" alt="微信二维码"></div>
+                <div class="fw_txt">关注微信公众号</div>
+            </div>
+        </li>
+        <li class="fw_item item_3">
+            <a class="fw_inner" href="#" target="_blank" title="QQ"></a>
+        </li>
+        <li class="fw_item item_4">
+            <a class="fw_inner" href="#" target="_blank" title="微博"></a>
+        </li>
+        <li class="fw_item item_5">
+            <a class="fw_inner" href="#" target="_blank" title="APP下载"></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+	
+
+	<div class="container-fluid tops">
+		<div class="warp top clearfix">
+			<div class="wel pull-left">欢迎来到明星私募网第三理财超市！</div>
+			<div class="top_l pull-right">
+				<span class="top_users dropdown">
+					<a href="javascript:;" class="top_users_n" id="userNav" data-toggle="dropdown">明星私募</a>
+					<ul class="dropdown-menu" aria-labelledby="userNav">
+						<li class="dropdown-header">个人中心</li>
+					    <li><a href="#"><i class="icon-edit"></i>资料设置</a></li>
+					    <li><a href="#"><i class="icon-group"></i>私募邦</a></li>
+					    <li><a href="#"><i class="icon-off"></i>退出</a></li>
+					</ul>
+				</span>
+				<span>
+					<a href="#">登录</a> |
+				    <a href="#">注册</a> |
+				    <a href="#">我的账户</a> |				</span>
+				<span>
+					<a href="#">帮助中心</a> |
+					<span class="dropdown webnav1">
+						<a href="javascript:;" class="top_last" id="webnav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">网站导航 <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="webnav">
+							<li class="dropdown-header">网站导航</li>
+						    <li><a href="#">基金净值</a></li>
+						    <li><a href="#">私募新闻</a></li>
+						    <li><a href="#">理财问答</a></li>
+						    <li><a href="#">明星联盟</a></li>
+						    <li><a href="#">私募学堂</a></li>
+						    <li><a href="#">网站地图</a></li>
+						</ul>
+				</span>
+			  </span>
+		  </div>
+		</div>
+	</div>
+
+	<div class="container-fluid heads bg_fff">
+		<div class="warp clearfix">
+			<div class="logo pull-left">
+				<h1><a href="#"><img src="theme/simu/img/logo.png" alt="明星私募网" title="明星私募网" /></a></h1>
+			</div>
+
+			<div class="head_u pull-right">
+				<a href="#"><span class="glyphicon glyphicon-user head_uico pull-left"></span><span class="font16 pull-left head_user">我的账户</span></a>			</div>
+
+			<div class="searchs pull-right">
+				<div class="search">
+					<form>
+						<div class="dropdown search_f">
+							<select class="selectpicker show-tick form-control">
+								<option>私募产品</option>
+								<option>信托产品</option>
+								<option>明星私募</option>
+								<option>理财问答</option>
+							</select>
+						</div>
+						<div class="search_i"><input type="text" placeholder="请输入关键字..." /></div>
+						<div class="search_b"><input type="submit" value="" /><span class="glyphicon glyphicon-search search_bico"></span></div>
+					</form>
+				</div>
+
+				<div class="search_nav">
+					<span>热门搜索：</span>
+					<a href="#">公募基金</a>
+					<a href="#">私募基金</a>
+					<a href="#">阳光私募</a>
+					<a href="#">信托基金</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container-fluid warps bg_fff">
+		<div class="navs">
+			<div class="warp">
+				<div class="nav dropdown clearfix">
+					<div class="nav_t pull-left" id="nav_dropdown" data-toggle="dropdown">
+						<i class="icon-list-ul nav_tico"></i><span>私募产品分类</span>					</div>
+
+					<ul class="nav_l">
+						<li><a href="#" class="curr">私募首页</a></li>
+						<li><a href="#">顶级私募<i class="hot pull-right"></i></a></li>
+						<li><a href="#">私募龙虎榜</a></li>
+						<li><a href="#">选基参考</a></li>
+						<li><a href="#">私募产品</a></li>
+						<li><a href="#">私募经理</a></li>
+						<li><a href="#">私募公司</a></li>
+						<li><a href="#">私募评级</a></li>
+						<li><a href="#">私募新闻</a></li>
+						<li><a href="#">理财问答</a></li>
+						<li><a href="#">明星联盟</a></li>
+					</ul>
+					
+					<div class="nav_lists dropdown-menu pull-left" aria-labelledby="nav_dropdown">
+						<ul class="nav_list">
+							<li class="curr"><a href="#">股票策略</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">相对价值</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">宏观策略</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">事件驱动</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">组合基金</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">债券策略</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">管理期货</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">复合策略</a><i class="icon-chevron-right"></i></li>
+							<li><a href="#">其它策略</a><i class="icon-chevron-right"></i></li>
+						</ul>
+
+						<div class="nav_listms">
+							<div class="nav_listm">
+								<div class="nav_listm_t">股票策略</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">相对价值</div>
+								<ul class="clearfix">
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+									<li><a href="#">相对价值</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">宏观策略</div>
+								<ul class="clearfix">
+									<li><a href="#">宏观策略</a></li>
+									<li><a href="#">宏观策略</a></li>
+									<li><a href="#">宏观策略</a></li>
+									<li><a href="#">宏观策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">事件驱动</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">组合基金</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">债券策略</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">管理期货</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">复合策略</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+
+							<div class="nav_listm">
+								<div class="nav_listm_t">其它策略</div>
+								<ul class="clearfix">
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+									<li><a href="#">股票策略</a></li>
+								</ul>
+								<div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+							</div>
+						</div>
+
+						<div class="appdown clearfix">
+							<img src="theme/simu/images/app1.png" alt="下载明星私募手机APP" title="下载明星私募手机APP" />
+							<span><a href="#">下载明星私募手机APP</a></span>						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<div class="mbdis_par">
+		<div class="mbpar_cont">
+        	<div class="par_left">
+        		<img src="theme/simu/images/mb_dis_06.png" width="500" height="500">
+            </div>	
+            <div class="par_intr">
+            	<img src="theme/simu/images/mb_dis_03.png" width="693" height="179">
+                <img class="intr_wz" src="theme/simu/images/mb_dis_10.png" width="586" height="116">
+                <p>互联网行业投资专家，股权时代精英人群的财富管家，资本新时代中流砥柱</p>	
+            </div>
+        </div>
+	</div> 
+    
+    <div class="mbdis_tips">
+    	<div class="tips_cont">
+        	<img src="theme/simu/images/mb_dis_15.png" width="440" height="350">
+            <ul>
+            	<li>长期跟踪中国互联网特别是互联网金融的新动向</li>
+                <li>致力于协助优秀的创业者共同打造伟大的领先企业</li>
+                <li>在长期实践中积累的大量的行业资源与人脉资源保障了优质项目的来源</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="mbdis_bid">
+    	<h2>【 墨白外聘顾问已投标的 】</h2>
+    	<div class="bid_cot">        	
+            <div class="bid_head">
+            	<img src="theme/simu/images/mb_dis_19.png" width="179" height="67">
+                <p><span>朝阳永续</span>——私募最权威<strong>数据终端</strong>服务提供商</p>
+            </div>
+            <ul>
+            	<li>□ 成立于2003年；</li>
+                <li>□ 2015年1月-5月，主营收入超过3100万元，预计全年利润超过3000万元；</li>
+                <li>□ 中国证券私募最权威的数据终端服务提供商，成长性及行业壁垒极高；</li>
+                <li>□ 连续10年举办中国私募基金风云榜，行业影响力巨大，目前估值超10亿元；</li>
+                <li>□ 旗下品牌：GO- Goal   数据终端，牛股头条移动APP应用。</li>
+            </ul>
+            <strong>投资时点估值：&nbsp;<span>7亿元</span>&nbsp;&nbsp;&nbsp;&nbsp;预期上市估值：&nbsp;<span>50亿元</span>（国金证券内部预估）</strong>
+        </div>
+        <div class="bid_cot">        	
+            <div class="bid_head2">
+            	<img src="theme/simu/images/mb_dis_22.png" width="107" height="57">
+                <p><span>私募排排网</span>——中国<strong>私募证券基金</strong>行业第一门户网站</p>
+            </div>
+            <ul>
+            	<li>□ 拥有中国最强大的私募基金数据库；</li>
+                <li>□ 截止2015年4月底，私募排排网数据库收录<span>全国6172家私募基金管理人、35731只基金产品</span>；</li>
+                <li>□ <span>中国第一家</span>从事私募证券基金研究评价公司（公司注册于2004年）；</li>
+                <li>□ <span>中国第一家</span>用互联网思维打造线上销售及服务的互联网金融公司；</li>
+                <li>□ <span>中国第一家</span>推出FOHF产品的专业机构（公司首只FOHF基金于2010年面世）；</li>
+                <li>□ <span>中国第一家</span>发布行业指数的公司（2011年发布中国对冲基金指数及基金经理信心指数）;</li>
+                <li>□ 拥有<span>逾15万的高净值注册用户</span>！近两年注册用户：增长124%。</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="mbdis_case">
+    	<div class="case_cont">
+        	<h2>【 墨白外聘顾问退出案例 】</h2>
+            <div class="case_head">
+            	<img src="theme/simu/images/mb_dis_29.png" width="101" height="35">
+                <p><span>力源信息</span>——内地最大<strong>电子元器件</strong>中小客户服务商</p>
+            </div>
+            <ul>
+            	<li>上市日期：2011-02-22，股票代码：300184；</li>
+                <li>是中国内地最大的电子元器件中小客户服务商之一；</li>
+                <li>服务于中国近十万注册客户、每年上万余交易客户，以及中国上百万电子工程师和业内人士；</li>
+                <li>拥有十多个产品种类，超过15000个型号的现货库存，拥有专业网站和庞大的产品资料库；</li>
+                <li>为客户提供从产品资料、产品方案、产品选型、供应保障及物流等一揽子服务。</li>
+            </ul>
+            <strong>上市退出收益倍数：&nbsp;<span>104倍</span></strong>
+            <div class="case_com">
+            	<h3>深圳前海墨白资产管理有限公司（简称：墨白资本）</h3>
+                <p><img src="theme/simu/images/mb_dis_26.png" width="26" height="44">致力于协助优秀的创业者共同打造伟大的领先企业，并长期跟踪中国互联网特别是互联网金融的新动向；</p>
+                <p><img src="theme/simu/images/mb_dis_26.png" width="26" height="44">在退出渠道上独具优势（上市公司市值管理和产业链整合）。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mbdis_spe">
+    	<div class="spe_cot">
+            <div class="spe_gur">
+                <h3>优质的项目保障</h3>
+                <p>在长期的资本市场投资实践中，墨白积累了大量的行业资源与人脉资源，包括多家长期合作、实力雄厚的私募公司、券商投资与股权投资的精英，保障了优质项目的来源。</p>
+            </div>
+            <div class="spe_avd">
+                <h3>强大的退出优势</h3>
+                <p>墨白外聘顾问穗富团队列席50余家上市公司十大流通股东，在项目退出选择上，除开公开发行（IPO）、新三板、被并购，还具备上市公司收购及借壳等独特优势。</p>
+            </div>
+            <div class="spe_tea">
+                <h3>专业的管理团队</h3>
+                <p>墨白管理团队均是国内名校毕业，其中不乏九鼎，天弘，交行、德勤等专业金融机构出生，具有丰富的投资经验。墨白是具有一支本土、专业、勤奋、稳定的投资队伍，对中国的宏观经济、资本市场、产业格局、企业竞争和中国文化有深入的理解，具有卓越的合作和奋斗精神。对资本市场有长期的实践和深入的理解，积累了大量针对非上市公司的股权投资实践经验。</p>
+            </div>
+            
+            <div class="group_pf">
+            	<img src="theme/simu/images/mb_dis_41.png" width="272" height="249">
+                <div class="pf_det">
+                	<h6>任鹏</h6>
+                    <ul>
+                    	<li>✔ 10年以上金融投资经验</li>
+                        <li>✔ 曾就职昆吾九鼎、天象投资、德意志银行投行部</li>
+                        <li>✔ 资深项目开发、资金募集与项目管理</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="group_pf">
+            	<img src="theme/simu/images/mb_dis_43.png" width="272" height="249">
+                <div class="pf_det">
+                	<h6>李澔东</h6>
+                    <ul>
+                    	<li>✔ 暨南大学硕士研究生毕业</li>
+                        <li>✔ 曾就职阿里巴巴旗下天弘基金管理有限公司及天弘创新资产管理有限公司</li>
+                        <li>✔ 百亿资产管理经验以及专研股权估值</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="group_pf">
+            	<img src="theme/simu/images/mb_dis_45.png" width="272" height="249">
+                <div class="pf_det">
+                	<h6>杜飞飞</h6>
+                    <ul>
+                    	<li>✔ 资深金融业风控和法律专业人员</li>
+                        <li>✔ 曾就职交通银行、新华保险</li>
+                        <li>✔ 6年以上国有大型银行、保险公司专职内控工作经历</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="group_pf1">
+            	<img src="theme/simu/images/mb_dis_47.png" width="272" height="249">
+                <div class="pf_det">
+                	<h6>陈陶</h6>
+                    <ul>
+                    	<li>✔ 熟悉税收征管法和税收实体法</li>
+                        <li>✔ 3年德勤会计师事务所从业经验</li>
+                        <li>✔ 熟悉财务尽调及梳理工作、项目风险管理</li>
+                    </ul>
+                </div>
+            </div>
+        </div>	
+    </div>
+	
+    <div class="mbdis_risk">
+    	<div class="risk_cot">
+        	<h2>风险控制——全流程风控体系</h2>
+            <img src="theme/simu/images/mb_dis_54.png" width="1200" height="576">
+        </div>
+    </div>
+    
+    <div class="mbdis_est">
+    	<div class="est_cot">
+        	<h6>已经成立的基金如下：</h6>
+            <ul>
+            	<li>2015年6月  墨白资本成立</li>
+                <li>重点投资已挂牌或拟挂牌新三板的高成长性中小创新型优质企业</li>
+                <li>2015年8月 完成第一支合伙型基金设立</li>
+                <li>墨白尚同有限合伙企业：设立金额1.05亿元</li>
+                <li>2015年10月   完成第二支合伙型基金设立</li>
+                <li>墨白坤元有限合伙企业：专项规模6000万元</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="mbdis_orp">
+		<h2>期待与您合作共赢！<br>马上预约墨白资本</h2>
+    </div>	
+
+
+
+	<div class="container-fluid foots">
+		<div class="warp">
+			<ol class="foot_l clearfix">
+				<li>
+					<h3>关于我们</h3>
+					<ul>
+						<li><a href="#">公司简介</a></li>
+						<li><a href="#">管理团队</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">合作伙伴</a></li>
+						<li><a href="#">人才招聘</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">网站地图</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>菜单导航</h3>
+					<ul>
+						<li><a href="#">私募推荐</a></li>
+						<li><a href="#">私募排行</a></li>
+						<li><a href="#">选基参考</a></li>
+						<li><a href="#">私募产品</a></li>
+						<li><a href="#">私募经理</a></li>
+						<li><a href="#">私募公司</a></li>
+						<li><a href="#">私募评级</a></li>
+						<li><a href="#">私募头条</a></li>
+						<li><a href="#">私募邦</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>服务导航</h3>
+					<ul>
+						<li><a href="#">私人定制</a></li>
+						<li><a href="#">认识明星私募网</a></li>
+						<li><a href="#">新手指引</a></li>
+						<li><a href="#">购基五部曲</a></li>
+						<li><a href="#">产品收录</a></li>
+						<li><a href="#">理财问答</a></li>
+						<li><a href="#">明星联盟</a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>关注我们</h3>
+					<ul class="foot_l_i">
+						<li class="foot_icode">
+							<a href="#"><i class="icon iconfont">&#xe603;</i></a>
+							<div class="popover">
+								<span class="arrow"></span>
+								<b>明星私募官方微信</b>
+								<img src="theme/simu/images/qc.png" alt="">
+							</div>
+						</li>
+						<li><a href="#"><i class="icon iconfont">&#xe602;</i></a></li>
+						<li><a href="#"><i class="icon iconfont">&#xe607;</i></a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>APP下载</h3>
+					<ul class="foot_l_i">
+						<li><a href="#"><i class="icon iconfont">&#xe604;</i></a></li>
+						<li><a href="#"><i class="icon iconfont">&#xe605;</i></a></li>
+					</ul>
+				</li>
+				<li style="padding-right: 0px;">
+					<h3>客服热线</h3>
+					
+					<ul class="foot_l_i2 clearfix">
+						<li><i class="icon iconfont">&#xe606;</i></li>
+						<li>4008-888-222<br />020-38369009</li>
+						
+					</ul>
+					<h3>在线咨询</h3>
+					<ul class="foot_l_i2 foot_l_i3 clearfix">
+						<li><a href="http://wpa.qq.com/msgrd?v=3&uin=2642162962&site=明星私募网&menu=yes" target="_blank"><i class="icon iconfont">&#xe609;</i>在线咨询</a> <span>08:00 ~ 23:00</span></li>
+					</ul>
+				</li>
+			</ol>
+
+			
+
+		</div>
+	</div>
+
+	<div class="container-fluid foot_bs">
+		<div class="warp foot_b">
+			<p>&copy; 2015 广州明星私募网 版权所有 <a href="http://www.miitbeian.gov.cn">粤ICP备13000033号</a></p>
+			<p>投资有风险，理财需谨慎</p>
+			<p><img src="theme/simu/images/verify_1.png" alt="" title="" />&nbsp;&nbsp;<img src="theme/simu/images/verify_2.png" alt="" title="" />&nbsp;&nbsp;<img src="theme/simu/images/verify_1.png" alt="" title="" /></p>
+		</div>
+	</div>
+    
+<div class="zxt_fix">
+	<div class="zxt_cot">
+    	<div class="zxt_click">
+    		<a class="zxt_off">
+        	<img src="theme/simu/images/zx_bg_03_02_03.png" width="250"><br />
+            点击收起</a>
+            <a class="zxt_on hide">
+        	<img src="theme/simu/images/zx_bg_03_02_03.png" width="250"><br />
+            点击展开</a>
+        </div>
+        <div class="before_click">
+            <img src="theme/simu/images/zx_bg_07.png" width="100" height="100" class="fixtel_icon">
+            <div class="fixtel_font">
+                <p>阳光私募，在线电话</p>
+                <span><img src="theme/simu/images/zx_bg_10.png">020-38369009<img src="theme/simu/images/zx_bg_10.png"></span>
+            </div>
+            <div class="zxt_btn">
+               <form action="" class="defForm">
+            		<div class="form-group">
+	                	<input type="text" name="username" placeholder="请输入2-5字中文姓名" class="zxt_srxm">
+	                </div>
+	                <div class="form-group">
+	                	<input type="text" name="phone" placeholder="请输入11位手机号码" class="zxt_srdh">
+	                </div>
+	                <div class="form-group">
+	                	<button type="submit" class="zxt_tj">提交</button>
+	                </div>
+	                <input type="button" value="在线咨询" class="zxt_online">
+                </form>
+                <p>（火爆咨询中，额度有限，专业理财顾问会尽快与您联系）</p>
+            </div>
+        </div>
+        <div class="after_click hide">
+        	<div class="xs_mz">
+            	<span><img src="theme/simu/images/czx_bg_10.png">您资产增值的最好投顾（穗富投资）<img src="theme/simu/images/czx_bg_10.png"></span>
+            </div>
+            <div class="xs_tet">
+            	<span><img src="theme/simu/images/c_tet.png">020-38369009</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

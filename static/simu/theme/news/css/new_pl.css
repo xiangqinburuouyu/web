@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0;font-family:"微软雅黑"; background-color: #f0f0f0;font-size:12px;color:#333;}
+a{text-decoration:none;color:#333;}
+ul,li{list-style:none;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{margin:0;}
+select{border:none;background:none;font-size:16px;}
+input{margin:0;padding:0;}
+
+.clearfix::after, .clearfix::before,{content: " "; display: table; clear: both;}
+
+
+
+
+.news_pl h3{margin-top:16px;font-size:18px;font-weight:bold;line-height:40px;}
+.news_pl h3 span{color:#c40000;}
+.news_pl2{}
+.news_pl2 .pl_con{ height: auto; padding: 20px 0; }
+.news_pl2 .pl_con textarea{ width: 93%;}
+.news_pl2 .pl_zs{ margin-left: 10px;}
+.pl_con p{margin-left:30px;line-height:40px;}
+.pl_con{height:240px;background-color:#e5e5e5;}
+.pl_con img{float:left;margin-left:10px;width:60px;height:60px;border-radius:50%;}
+.pl_con textarea{width:80%;min-height:100px; padding:10px ;float:left;margin-left:10px;background-color:#fff;border:0;}
+.pl_zs{display:block;clear:left;margin-left:80px;line-height:24px;color:#b2b2b2;}
+.news_pl .tjpl{margin:0;width:100px;height:40px;float:right;text-align:center;line-height:40px;background-color:#d9d9d9;margin-right:10px;}
+.pl_nu{width:100%;text-align:center;font-weight:bold;margin-top:20px;}
+.pl_nu span{clear:right;padding:6px 10px;background-color:#c40000;color:#fff;margin:4px;}
+
+.npl_dr{overflow:hidden;}
+.npl_dr a{font-size:14px;}
+.npl_1{clear:both;border-bottom:1px solid #e0e0e0;overflow:hidden;}
+.npl_1 .npimg{float:left;margin:20px 0; width: 50px; height: 50px;border-radius:50%;}
+.npl_2{clear:both;overflow:hidden;}
+.npl_2 .npimg{float:left;margin:20px 0;width: 50px; height: 50px;border-radius:50%;}
+.npl_3s{ width: 90%;  margin-left:60px; margin-bottom:30px; float: left; border: 1px dotted #ccc; border-bottom: 0;}
+.npl_3{ border-bottom: 1px dotted #ccc; padding-left: 10px;}
+.npl_3 .npl_cd{ width: 84%;}
+.npl_cd{float:left;width:85%;margin-left:10px;margin-top:20px; min-height: 71px;}
+.npl_cd a{color:#c40000;}
+.npl_cd p{margin:0;line-height:24px;}
+.npl_tim{color:#999;float:left;}
+.nreply_pl{float:right;}
+.nreply_pl a{margin-right:10px;font-size:12px;color:#333;}
+.npl_dr .collapse .well{ padding: 0;}
+
+
+
+
+
+
+
+
+
+
+
+

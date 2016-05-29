@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>私募产品内容页</title>
+    <link href="theme/simu/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="theme/simu/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="theme/simu/bootstrap-select-dist/css/bootstrap-select.min.css">
+    <!--[if IE 7]>
+	<link rel="stylesheet" href="theme/simu/Font-Awesome-3.2.1/css/font-awesome-ie7.min.css">
+	<![endif]-->
+    <link rel="stylesheet" href="theme/simu/css/theme.css" />
+    <!--[if lt IE 9]>
+	<script src="theme/simu/js/html5shiv-3.7.2.min.js"></script>
+    <script src="theme/simu/js/respond-1.4.2.min.js"></script>
+    <![endif]-->
+    <script src="theme/simu/js/require.min.js"></script>
+    <script src="theme/simu/js/require-config.js"></script>
+    <script src="theme/simu/js/simu-com-tab-chart.js"></script>
+</head>
+
+<body>
+    <div class="right_fw">
+        <ul class="fw_list">
+            <li class="fw_item item_1">
+                <a class="fw_inner" href="javascript:;" title="客服"></a>
+            </li>
+            <li class="fw_item item_2">
+                <a class="fw_inner" href="#" target="_blank" title="微信"></a>
+                <div class="fw_code">
+                    <div class="fw_img"><img src="theme/simu/images/qc.png" alt="微信二维码"></div>
+                    <div class="fw_txt">关注微信公众号</div>
+                </div>
+            </li>
+            <li class="fw_item item_3">
+                <a class="fw_inner" href="#" target="_blank" title="QQ"></a>
+            </li>
+            <li class="fw_item item_4">
+                <a class="fw_inner" href="#" target="_blank" title="微博"></a>
+            </li>
+            <li class="fw_item item_5">
+                <a class="fw_inner" href="#" target="_blank" title="APP下载"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid tops">
+        <div class="warp top clearfix">
+            <div class="wel pull-left">欢迎来到明星私募网第三理财超市！</div>
+            <div class="top_l pull-right">
+                <span>
+					<a href="#">登录</a> |
+				    <a href="#">注册</a> |
+				    <a href="#">我的账户</a> |
+				</span>
+                <span>
+					<a href="#">帮助中心</a> |
+					<span class="dropdown">
+						<a href="#" class="top_last" id="webnav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">网站导航 <span class="caret"></span></a>
+                <ul class="dropdown-menu" aria-labelledby="webnav">
+                    <li class="dropdown-header">明星私募</li>
+                    <li><a href="#">股票策略</a></li>
+                    <li><a href="#">相对价值</a></li>
+                    <li><a href="#">宏观策略</a></li>
+                    <li><a href="#">事件驱动</a></li>
+                </ul>
+                </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid heads bg_fff">
+        <div class="warp clearfix">
+            <div class="logo pull-left">
+                <h1><a href="#"><img src="theme/simu/img/logo.png" alt="明星私募网" title="明星私募网" /></a></h1>
+            </div>
+            <div class="head_u pull-right">
+                <a href="#"><span class="glyphicon glyphicon-user head_uico pull-left"></span><span class="font16 pull-left head_user">我的账户</span></a>
+            </div>
+            <div class="searchs pull-right">
+                <div class="search">
+                    <form>
+                        <div class="dropdown search_f">
+                            <select class="selectpicker show-tick form-control">
+                                <option>私募产品</option>
+                                <option>信托产品</option>
+                                <option>明星私募</option>
+                                <option>理财问答</option>
+                            </select>
+                        </div>
+                        <div class="search_i">
+                            <input type="text" placeholder="请输入关键字..." />
+                        </div>
+                        <div class="search_b">
+                            <input type="submit" value="" /><span class="glyphicon glyphicon-search search_bico"></span></div>
+                    </form>
+                </div>
+                <div class="search_nav">
+                    <span>热门搜索：</span>
+                    <a href="#">公募基金</a>
+                    <a href="#">私募基金</a>
+                    <a href="#">阳光私募</a>
+                    <a href="#">信托基金</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid warps bg_fff">
+        <div class="navs navs_page">
+            <div class="warp">
+                <div class="nav dropdown clearfix">
+                    <div class="nav_t pull-left" id="nav_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon-list-ul nav_tico"></i><span>私募产品分类</span>
+                    </div>
+                    <ul class="nav_l nav_l_page">
+                        <li class="first"><a href="#" class="curr">私募首页</a></li>
+                        <li><a href="#">顶级私募<i class="hot pull-right"></i></a></li>
+                        <li><a href="#">私募龙虎榜</a></li>
+                        <li><a href="#">选基参考</a></li>
+                        <li><a href="#">私募产品</a></li>
+                        <li><a href="#">私募经理</a></li>
+                        <li><a href="#">私募公司</a></li>
+                        <li><a href="#">私募评级</a></li>
+                        <li><a href="#">私募新闻</a></li>
+                        <li><a href="#">理财问答</a></li>
+                        <li class="last"><a href="#">私募邦</a></li>
+                    </ul>
+                    <div class="nav_lists dropdown-menu pull-left" aria-labelledby="nav_dropdown">
+                        <ul class="nav_list">
+                            <li class="curr"><a href="#">股票策略</a><i class="icon-chevron-right"></i></li>
+                            <li><a href="#">相对价值</a><i class="icon-chevron-right"></i></li>
+                            <li><a href="#">宏观策略</a><i class="icon-chevron-right"></i></li>
+                            <li><a href="#">事件驱动</a><i class="icon-chevron-right"></i></li>
+                            <li><a href="#">组合基金</a><i class="icon-chevron-right"></i></li>
+                            <li><a href="#">债券策略</a><i class="icon-chevron-right"></i></li>
+                            <li><a href="#">管理期货</a><i class="icon-chevron-right"></i></li>
+                            <li><a href="#">复合策略</a><i class="icon-chevron-right"></i></li>
+                            <li><a href="#">其它策略</a><i class="icon-chevron-right"></i></li>
+                        </ul>
+                        <div class="nav_listms">
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">股票策略</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">相对价值</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">相对价值</a></li>
+                                    <li><a href="#">相对价值</a></li>
+                                    <li><a href="#">相对价值</a></li>
+                                    <li><a href="#">相对价值</a></li>
+                                    <li><a href="#">相对价值</a></li>
+                                    <li><a href="#">相对价值</a></li>
+                                    <li><a href="#">相对价值</a></li>
+                                    <li><a href="#">相对价值</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">宏观策略</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">宏观策略</a></li>
+                                    <li><a href="#">宏观策略</a></li>
+                                    <li><a href="#">宏观策略</a></li>
+                                    <li><a href="#">宏观策略</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">事件驱动</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">组合基金</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">债券策略</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">管理期货</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">复合策略</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                            <div class="nav_listm">
+                                <div class="nav_listm_t">其它策略</div>
+                                <ul class="clearfix">
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                    <li><a href="#">股票策略</a></li>
+                                </ul>
+                                <div class="nav_listm_g"><img src="theme/simu/images/nav1.png" alt="" title="" /></div>
+                            </div>
+                        </div>
+                        <div class="appdown clearfix">
+                            <img src="theme/simu/images/app1.png" alt="下载明星私募手机APP" title="下载明星私募手机APP" />
+                            <span><a href="#">下载明星私募手机APP</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="warp">
+            <ol class="breadcrumb">
+                <li>当前位置</li>
+                <li class="margin_left10"><a href="#">首页</a></li>
+                <li class="active">私募产品内容页</li>
+            </ol>
+            <div class="pro_pl pull-left">
+                <div class="pro_ph border border_t clearfix bg_fff">
+                    <div class="pro_ph_t">
+                        <span>辛宇－泽泉景渤财富</span>
+                        <div class="pro_ph_tr pull-right"><em class="pull-left">私募评级：</em>
+                            <!--<div class="rating margin_left10 pull-left" data-role="rating" data-param-vote="off" data-param-rating="3"></div>-->
+                            <div class="rating margin_left10 pull-left" data-role="rating" data-param-stars="5" data-param-rating="3"></div>
+                        </div>
+                    </div>
+                    <ul class="pro_ph_c clearfix">
+                        <li>
+                            <p>最新净值：<span>3.9759</span><em>(2015-09-11)</em></p>
+                            <p>平均收益：<span>139.9%</span><em>(截至08月)</em></p>
+                        </li>
+                        <li>
+                            <p>累计净值：<span>3.9759</span></p>
+                            <p>累计收益：<span>239.9%</span></p>
+                        </li>
+                        <li>
+                            <p>今年来收益：<span>247.55%</span><em>(截至08月)</em></p>
+                            <p>近一年收益：<span>216.05%</span><em>(截至08月)</em></p>
+                        </li>
+                        <li class="last">
+                            <p>基金经理：<a href="#">辛宇</a></p>
+                            <p>基金公司：<a href="#">泽泉投资</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="border border_t bg_fff margin_top30">
+                    <ul class="pro_p_h tab_nav clearfix">
+                        <li class="active"><a href="#pro_p1">收益走势图</a></li>
+                        <li><a href="#pro_p2">月度回报图</a></li>
+                        <li><a href="#pro_p3">月度回撤图</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="pro_p_chart_c tab-pane fade active in" id="pro_p1">
+                            <div id="chart_container" style="width:858px;height: 365px"></div>
+                            <p class="color_c400">温馨提示：沪深300指数值为与该产品累计净值同一初始值的相对值，而非实际指数值</p>
+                        </div>
+                        <div class="pro_p_chart_c tab-pane fade" id="pro_p2">
+                            <div id="chart_container2" style="width:858px;height: 365px"></div>
+                            <p class="color_c400">温馨提示：沪深300指数值为与该产品累计净值同一初始值的相对值，而非实际指数值</p>
+                        </div>
+                        <div class="pro_p_chart_c tab-pane fade" id="pro_p3">
+                            <div id="chart_container3" style="width:858px;height: 365px"></div>
+                            <p class="color_c400">温馨提示：沪深300指数值为与该产品累计净值同一初始值的相对值，而非实际指数值</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border_t bg_fff margin_top30">
+                    <ul class="pro_p_h tab_nav clearfix">
+                        <li class="active"><a href="#pro_p4">历史净值表</a></li>
+                        <li><a href="#pro_p5">历史业绩表</a></li>
+                        <li><a href="#pro_p6">年度业绩表</a></li>
+                        <li><a href="#pro_p7">风险评估表</a></li>
+                    </ul>
+                    <div class="tab-content margin_top20">
+                        <div class="pro_p_tables tab-pane fade active in" id="pro_p4">
+                            <table class="pro_p_table">
+                                <thead>
+                                    <tr>
+                                        <th width="230px">净值日期</th>
+                                        <th width="230px">单位净值</th>
+                                        <th width="230px">累计净值</th>
+                                        <th width="210px" class="last">涨跌幅</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="pro_p_table_c">
+                                <table class="pro_p_table">
+                                    <tbody>
+                                        <tr>
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_c400">0.01%</span></td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_090">-0.01%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_c400">0.01%</span></td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_090">-0.01%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_c400">0.01%</span></td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_090">-0.01%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_c400">0.01%</span></td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_090">-0.01%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_c400">0.01%</span></td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="230px">2015.09.11</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="230px">3.9759</td>
+                                            <td width="193px" class="last"><span class="color_090">-0.01%</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="pro_p_tables tab-pane fade" id="pro_p5">
+                            <table class="pro_p_table">
+                                <thead>
+                                    <tr>
+                                        <th width="179px">时间</th>
+                                        <th width="179px">收益率</th>
+                                        <th width="179px">同类平均</th>
+                                        <th width="179px">沪深300</th>
+                                        <th width="182px" class="last">同类排名</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="pro_p_table_c">
+                                <table class="pro_p_table">
+                                    <tbody>
+                                        <tr>
+                                            <td width="179px">今年以来</td>
+                                            <td width="179px">247.55%</td>
+                                            <td width="179px">4.03%</td>
+                                            <td width="179px">-4.67%</td>
+                                            <td width="165px" class="last">33</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="179px">近一月</td>
+                                            <td width="179px">-0.12%</td>
+                                            <td width="179px">-0.86%</td>
+                                            <td width="179px">-11.41%</td>
+                                            <td width="165px" class="last">4768</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179px">今年以来</td>
+                                            <td width="179px">247.55%</td>
+                                            <td width="179px">4.03%</td>
+                                            <td width="179px">-4.67%</td>
+                                            <td width="165px" class="last">33</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="179px">近一月</td>
+                                            <td width="179px">-0.12%</td>
+                                            <td width="179px">-0.86%</td>
+                                            <td width="179px">-11.41%</td>
+                                            <td width="165px" class="last">4768</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179px">今年以来</td>
+                                            <td width="179px">247.55%</td>
+                                            <td width="179px">4.03%</td>
+                                            <td width="179px">-4.67%</td>
+                                            <td width="165px" class="last">33</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="179px">近一月</td>
+                                            <td width="179px">-0.12%</td>
+                                            <td width="179px">-0.86%</td>
+                                            <td width="179px">-11.41%</td>
+                                            <td width="165px" class="last">4768</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179px">今年以来</td>
+                                            <td width="179px">247.55%</td>
+                                            <td width="179px">4.03%</td>
+                                            <td width="179px">-4.67%</td>
+                                            <td width="165px" class="last">33</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="179px">近一月</td>
+                                            <td width="179px">-0.12%</td>
+                                            <td width="179px">-0.86%</td>
+                                            <td width="179px">-11.41%</td>
+                                            <td width="165px" class="last">4768</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179px">今年以来</td>
+                                            <td width="179px">247.55%</td>
+                                            <td width="179px">4.03%</td>
+                                            <td width="179px">-4.67%</td>
+                                            <td width="165px" class="last">33</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="179px">近一月</td>
+                                            <td width="179px">-0.12%</td>
+                                            <td width="179px">-0.86%</td>
+                                            <td width="179px">-11.41%</td>
+                                            <td width="165px" class="last">4768</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="pro_p_tables tab-pane fade" id="pro_p6">
+                            <table class="pro_p_table">
+                                <thead>
+                                    <tr>
+                                        <th width="179px">时间</th>
+                                        <th width="179px">收益率</th>
+                                        <th width="179px">同类平均</th>
+                                        <th width="179px">沪深300</th>
+                                        <th width="182px" class="last">同类排名</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="pro_p_table_c">
+                                <table class="pro_p_table">
+                                    <tbody>
+                                        <tr>
+                                            <td width="179px">2015</td>
+                                            <td width="179px">247.55%</td>
+                                            <td width="179px">4.03%</td>
+                                            <td width="179px">-4.67%</td>
+                                            <td width="165px" class="last">33</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="179px">2014</td>
+                                            <td width="179px">-0.12%</td>
+                                            <td width="179px">-0.86%</td>
+                                            <td width="179px">-11.41%</td>
+                                            <td width="165px" class="last">4768</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179px">2012</td>
+                                            <td width="179px">247.55%</td>
+                                            <td width="179px">4.03%</td>
+                                            <td width="179px">-4.67%</td>
+                                            <td width="165px" class="last">33</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="179px">2011</td>
+                                            <td width="179px">-0.12%</td>
+                                            <td width="179px">-0.86%</td>
+                                            <td width="179px">-11.41%</td>
+                                            <td width="165px" class="last">4768</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="179px">2010</td>
+                                            <td width="179px">247.55%</td>
+                                            <td width="179px">4.03%</td>
+                                            <td width="179px">-4.67%</td>
+                                            <td width="165px" class="last">33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="pro_p_tables tab-pane fade" id="pro_p7">
+                            <table class="pro_p_table">
+                                <thead>
+                                    <tr>
+                                        <th width="128px">时间</th>
+                                        <th width="128px">年化收益率</th>
+                                        <th width="128px">年化波动率</th>
+                                        <th width="128px">最大回撤</th>
+                                        <th width="128px">下行风险</th>
+                                        <th width="128px">夏普比率</th>
+                                        <th width="130px" class="last">索提诺比率</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="pro_p_table_c">
+                                <table class="pro_p_table">
+                                    <tbody>
+                                        <tr>
+                                            <td width="128px">近一年</td>
+                                            <td width="128px">247.55%</td>
+                                            <td width="128px">105.93%</td>
+                                            <td width="128px">14.63%</td>
+                                            <td width="128px">10.85%</td>
+                                            <td width="128px">200.53%</td>
+                                            <td width="113px" class="last">1957.87%</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="128px">近二年</td>
+                                            <td width="128px">247.55%</td>
+                                            <td width="128px">105.93%</td>
+                                            <td width="128px">14.63%</td>
+                                            <td width="128px">10.85%</td>
+                                            <td width="128px">200.53%</td>
+                                            <td width="113px" class="last">1957.87%</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="128px">近一年</td>
+                                            <td width="128px">247.55%</td>
+                                            <td width="128px">105.93%</td>
+                                            <td width="128px">14.63%</td>
+                                            <td width="128px">10.85%</td>
+                                            <td width="128px">200.53%</td>
+                                            <td width="113px" class="last">1957.87%</td>
+                                        </tr>
+                                        <tr class="curr">
+                                            <td width="128px">近二年</td>
+                                            <td width="128px">247.55%</td>
+                                            <td width="128px">105.93%</td>
+                                            <td width="128px">14.63%</td>
+                                            <td width="128px">10.85%</td>
+                                            <td width="128px">200.53%</td>
+                                            <td width="113px" class="last">1957.87%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="margin_top20">提示：</p>
+                                <p>1.夏普比率(Sharpe) : 衡量基金承担单位风险所获得的超额回报率，即基金总回报率高于同期无风险收益率的部分。该比率越高，基金承担单位风险得到的超额回报率越高。</p>
+                                <p>2.索提诺比率（Sortino Ratio）: 区分了波动的好坏，衡量计算期内相同单位下行风险能获得的超额回报率。该比率越高，基金承担单位下行风险得到的超额回报率越高。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border_t bg_fff margin_top30">
+                    <ul class="pro_p_h tab_nav clearfix">
+                        <li class="active"><a href="#pro_p8">基金经理</a></li>
+                        <li><a href="#pro_p9">私募公司</a></li>
+                        <li><a href="#pro_p10">投资理念</a></li>
+                        <li><a href="#pro_p11">投研团队</a></li>
+                    </ul>
+                    <div class="tab-content margin_top20">
+                        <div class="pro_p_con tab-pane fade active in clearfix" id="pro_p8">
+                            <div class="n_r_cl pull-left">
+                                <a href="#">
+                                    <img src="theme/simu/images/mg.png" alt="" title="" />
+                                    <p class="img_bg"></p>
+                                </a>
+                            </div>
+                            <div class="pro_p_con_r pull-left">
+                                <p>公司创始人，中国游资的实力代表宁波“涨停板敢死队”职业操盘手出身，有着丰富的实战操盘经验和辉煌的投资战绩。从业以来，辛宇先后担任清华控股资产管理公司交易总监，知钱1期阳光私募投资总监，中金公司投资经理，国开证券北京营业部首席证券分析师等职务。其近10年的投资生涯中，兼有就职于王牌游资和国内龙头金融机构的双重工作经历。对证券投资的潜心研究形成了其独特的投资风格和出色的投资业绩；对投资管理、投资团队管理、投资顾问业务管理及渠道营销等业务广泛深入的亲身经历，又使其具备了丰富的管理经验，这些都为泽泉投资管理公司的成功运营奠定了坚实基础。个人投资特长：敢死队操盘手和国内龙头金融机构双重工作经历，使其熟悉掌握市场各方主力的选股思路和操盘手法，从而善于高效的使用资金，系统化操盘以捕捉行情主流热点和板块中的龙头个股。基本面选股，同时尊重市场趋势，强调中线做市场大波段，擅长大资金资产配置。个人研究覆盖面广，熟悉两市80%以上的上市公司和各个主要行业，坚持每日复盘翻阅个股，已能迅速凭个人记忆将股票名称及代码进行关联并熟知公司行业基本面和历史K线走势。善于剖析每个阶段市场的不同特点，进而适应市场，随时随势而变。 对市场有着独到的个人理解。在投资中重视对人性的研究，认为炒股最终是炒“心”，是对自我和人性的挑战，强调投资心态的作用，并与基本面分析和技术分析相结合，实战中创新性提出了股性战法，量能战法，趋势战法，龙头战法等操盘技术。 </p>
+                            </div>
+                        </div>
+                        <div class="pro_p_con tab-pane fade" id="pro_p9">
+                            <p>广东泽泉投资管理有限公司，是由实战派新生代代表人物辛宇于2011年发起设立的专业投资管理公司，注册资本1000万元，位于广东省广州市天河区林和西路耀中广场A37楼。公司客户定位国内高端阶层，以证券投资为核心竞争优势，同时为投资人提供全方位的财富管理服务，业务范围涵盖：A股投资、PE股权投资、股指期货对冲交易、债券投资、信托产品、银行理财等。公司从市场实战出发，坚持以规范化管理为基础，拥有完整的投资研究、风险控制和操盘交易团队，具有出色的历史业绩和丰富的资产管理经验。秉承“趋势投资、价格交易、尊重市场、逆向思维”的投资理念，始终以追求绝对收益为目标，致力发展成为中国私募基金的领先者。 </p>
+                        </div>
+                        <div class="pro_p_con tab-pane fade" id="pro_p10">
+                            <p>1、趋势投资：是短线投机、波段操作与中长线投资的完美组合。即尊重市场趋势，投资顺势而为，即上升趋势（牛市）持股，下跌趋势（熊市）持币，牛市拼命赚钱，熊市空仓休息。在趋势投资的理念中，只有处在上升趋势（牛市）中股票才有价值，因为上涨是大概率的事情。在下跌趋势（熊市）中再好的股票也没有价值，因为下跌是大概率的事情。操作中根据股指点位决定仓位。在股指连续下挫的时候轻仓短线介入博取反弹；在股指处于低位的时候重仓中线介入；在股指次高位的时候保持轻仓以免踏空；在股指高位的时候清仓保证安全。在具体操作中：</p>
+                            <p>1）、重势而为，只要上升趋势不变，则坚定持有。止损不止赢，截断亏损让利润奔跑；
+                                <br/>2）、以技术和经验去聆听市场，看盘说话，以价格为依据、以市场为中心来进行交易；
+                                <br/>3）、抓主流板块和龙头个股，大环境下股票都有轮动机会，抓住主流板块你就抓住了盈利主线；
+                                <br/>4）、判断趋势性质，短线品种上涨也快，跌得也猛，注意波段操作；长线品种调整有序，对上行通道保持完好的可耐心持有；</p>
+                            <p>2、价格交易：是证券投资盈利的根本途径。每个投资者做股票最终价值实现的方式是低价买入，高价卖给别人，低买高卖赚取价差收益是股票投资收益的源泉。证券投资的关键，不是判断什么公司好，有价值，而是在什么时间以什么价格买入，未来以什么价格卖出的问题。故投资有价值的公司一样会赔钱，选择绩差股一样可以波段获利。十年一梦回到原点的A股市场，真正有价值的公司凤毛麟角，证明价值投资是小概率的成功，不适合当前A股市场，唯有在大幅波动的A股中把握每个牛熊，波段操作，做好低买高卖的价格交易才是当前A股的生存之道。</p>
+                        </div>
+                        <div class="pro_p_con tab-pane fade" id="pro_p11">
+                            <p><strong>辛宇</strong>，创始人，中国游资的实力代表宁波“涨停板敢死队”职业操盘手出身，有着丰富的实战操盘经验和辉煌的投资战绩。从业以来，辛宇先后担任清华控股资产管理公司交易总监，知钱1期阳光私募投资总监，中金公司投资经理，国开证券北京营业部首席证券分析师等职务。其近10年的投资生涯中，兼有就职于王牌游资和国内龙头金融机构的双重工作经历。对证券投资的潜心研究形成了其独特的投资风格和出色的投资业绩；对投资管理、投资团队管理、投资顾问业务管理及渠道营销等业务广泛深入的亲身经历，又使其具备了丰富的管理经验，这些都为泽泉投资管理公司的成功运营奠定了坚实基础。 </p>
+                            <p>交易总监：<strong>胡军程先生</strong>，投资决策委员会成员北京理工大学计算机软件与理论专业硕士，曾任中央结算公司数据分析员，航天信息股份有限公司大区经理，东方财富网知名博主（久阳阿顺），山东卫视《投资有理》长期特约嘉宾，多次在公开媒体上发表正确观点。9年证券实战经验，以短线交易擅长。对趋势、均线、时间周期、kdj等技术指标有较深刻的理解，熟悉多数上市公司的基本面，遵循基本面选股，技术面择时，擅于挖掘热点，跟随热点，波段操作，顺势而为。主要负责参与投资决策和投资管理业务运作中的交易工作</p>
+                            <p>风控总监：<strong>方寿威先生</strong>， 投资决策委员会成员毕业于北京工商大学，经济学学士，中级经济师。证券从业经验9年、2003年通过证券从业资格考试获2级从业资格，曾任北京知钱投资顾问有限公司总经理、中国民航总局直属金飞民航经济发展中心企业管理部、证券业务部（管理亿级资金交易账户）。主要负责公司重大投资决策和投资管理业务运作过程中的风险控制。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border_t bg_fff margin_top30">
+                    <div class="pro_ph_t color_c400 margin_left20">
+                        <h4>旗下产品收益</h4></div>
+                    <table class="pro_p_table">
+                        <thead>
+                            <tr>
+                                <th width="130px">基金简称</th>
+                                <th width="90px">最新净值</th>
+                                <th width="90px">累计收益</th>
+                                <th width="95px">运行时间</th>
+                                <th width="118px">今年以来收益</th>
+                                <th width="95px">近二年收益</th>
+                                <th width="95px">近一年收益</th>
+                                <th width="90px">年化收益</th>
+                                <th width="95px" class="last">投资策略</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#">泽泉景渤财富</a></td>
+                                <td>3.9759</td>
+                                <td>297.59%</td>
+                                <td>1年9月</td>
+                                <td>247.55%</td>
+                                <td>---</td>
+                                <td>216.05%</td>
+                                <td>119.97%</td>
+                                <td class="last">股票策略</td>
+                            </tr>
+                            <tr class="curr">
+                                <td><a href="#">泽泉景渤财富</a></td>
+                                <td>3.9759</td>
+                                <td>297.59%</td>
+                                <td>1年9月</td>
+                                <td>247.55%</td>
+                                <td>---</td>
+                                <td>216.05%</td>
+                                <td>119.97%</td>
+                                <td class="last">股票策略</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">泽泉景渤财富</a></td>
+                                <td>3.9759</td>
+                                <td>297.59%</td>
+                                <td>1年9月</td>
+                                <td>247.55%</td>
+                                <td>---</td>
+                                <td>216.05%</td>
+                                <td>119.97%</td>
+                                <td class="last">股票策略</td>
+                            </tr>
+                            <tr class="curr">
+                                <td><a href="#">泽泉景渤财富</a></td>
+                                <td>3.9759</td>
+                                <td>297.59%</td>
+                                <td>1年9月</td>
+                                <td>247.55%</td>
+                                <td>---</td>
+                                <td>216.05%</td>
+                                <td>119.97%</td>
+                                <td class="last">股票策略</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">泽泉景渤财富</a></td>
+                                <td>3.9759</td>
+                                <td>297.59%</td>
+                                <td>1年9月</td>
+                                <td>247.55%</td>
+                                <td>---</td>
+                                <td>216.05%</td>
+                                <td>119.97%</td>
+                                <td class="last">股票策略</td>
+                            </tr>
+                            <tr class="curr">
+                                <td><a href="#">泽泉景渤财富</a></td>
+                                <td>3.9759</td>
+                                <td>297.59%</td>
+                                <td>1年9月</td>
+                                <td>247.55%</td>
+                                <td>---</td>
+                                <td>216.05%</td>
+                                <td>119.97%</td>
+                                <td class="last">股票策略</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="nw border border_t bg_fff margin_top30 pull-left">
+                    <div class="nw_t color_c400">独家走访</div>
+                    <ul class="nw_list">
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                    </ul>
+                </div>
+                <div class="nw border border_t bg_fff margin_top30 margin_left20 pull-left">
+                    <div class="nw_t color_c400">独家研报</div>
+                    <ul class="nw_list">
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                        <li><i class="icon-star"></i><a href="#">【走访报告】源实资产：特别的量化产品，特别</a><span>2015-09-09</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pro_pr margin_left20 pull-left">
+                <div class="ce_r1 border border_t bg_fff">
+                    <div class="nw_t color_c400">咨询电话：4008-100-888</div>
+                    <div class="input-group ce_c">
+                        <span class="input-group-addon">姓名</span>
+                        <input type="text" class="form-control" placeholder="请输入中文姓名">
+                    </div>
+                    <div class="input-group ce_c">
+                        <span class="input-group-addon">电话</span>
+                        <input type="text" class="form-control" placeholder="请输入联系电话">
+                    </div>
+                    <div class="ce_c">
+                        <button type="button" class="btn btn-danger center-block">立即预约</button>
+                    </div>
+                </div>
+                <div class="ce_r2 border border_t bg_fff margin_top30">
+                    <div class="nw_t color_c400">基本信息</div>
+                    <ul class="inf_list">
+                        <li><span>基金全称：</span><em>泽泉景渤财富</em></li>
+                        <li><span>成立时间：</span><em>2013-12-02</em></li>
+                        <li><span>基金状态：</span><em>运行中</em></li>
+                        <li><span>发行平台：</span><em>泽泉投资</em></li>
+                        <li><span>托管银行：</span><em>中信银行</em></li>
+                        <li><span>基金类型：</span><em>信托</em></li>
+                        <li><span>投资策略：</span><em>股票策略</em></li>
+                        <li><span>子 策 略：</span><em>股票多头</em></li>
+                    </ul>
+                </div>
+                <div class="ce_r2 border border_t bg_fff margin_top30">
+                    <div class="nw_t color_c400">认购须知</div>
+                    <ul class="inf_list">
+                        <li><span>开放日期：</span><em>每月最后一个交易日</em></li>
+                        <li><span>封闭期长：</span><em>---</em></li>
+                        <li><span>认购起点：</span><em>1000万</em></li>
+                        <li><span>认购费率：</span><em>1.00%</em></li>
+                        <li><span>管理费率：</span><em>1.50%</em></li>
+                        <li><span>赎回费率：</span><em>---</em></li>
+                        <li><span>业绩报酬：</span><em>20.00%</em></li>
+                    </ul>
+                </div>
+                <div class="ce_r2 border border_t bg_fff margin_top30">
+                    <div class="nw_t color_c400">热门私募</div>
+                    <ul class="hot_sm">
+                        <li class="clearfix border_b">
+                            <div class="mg mg3 margin_left10 margin_top30 pull-left">
+                                <a href="#">
+                                    <img alt="" src="theme/simu/images/mg.png">
+                                    <p class="img_bg img_bg3"></p>
+                                </a>
+                            </div>
+                            <div class="hot_sm_i pull-left">
+                                <h4><a href="#">凯丰对冲三号</a></h4>
+                                <p>最新净值：<span>1.6220</span></p>
+                                <p>累计收益：<span>135.97%</span></p>
+                                <p><a href="#" class="btn btn2">立即咨询</a></p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="mg mg3 margin_left10 margin_top30 pull-left">
+                                <a href="#">
+                                    <img alt="" src="theme/simu/images/mg.png">
+                                    <p class="img_bg img_bg3"></p>
+                                </a>
+                            </div>
+                            <div class="hot_sm_i pull-left">
+                                <h4><a href="#">凯丰对冲三号</a></h4>
+                                <p>最新净值：<span>1.6220</span></p>
+                                <p>累计收益：<span>135.97%</span></p>
+                                <p><a href="#" class="btn btn2">立即咨询</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ce_r2 border border_t bg_fff margin_top30">
+                    <div class="nw_t color_c400">阳光私募信息免费订阅</div>
+                    <ul class="inf_list">
+                        <li>
+                            第一时间通知您最新的私募基金免费为您发送私募投资策略
+                        </li>
+                        <li>
+                            <p>免费服务热线：</p>
+                            <h4 class="color_c400">4008-100-888</h4>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn6"><span class="glyphicon glyphicon-envelope"></span>订阅到邮箱</a>
+                            <a href="#" class="btn btn6"><span class="glyphicon glyphicon-phone"></span>订阅到手机</a>
+                        </li>
+                        <li>
+                            <p><span class="glyphicon glyphicon-exclamation-sign font16 color_c400"></span> 我们承诺对您的信息严格保密</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid foots margin_top30">
+        <div class="warp">
+            <ol class="foot_l clearfix">
+                <li>
+                    <h3>关于我们</h3>
+                    <ul>
+                        <li><a href="#">公司简介</a></li>
+                        <li><a href="#">管理团队</a></li>
+                        <li><a href="#">媒体报道</a></li>
+                        <li><a href="#">合作伙伴</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">网站地图</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>菜单导航</h3>
+                    <ul>
+                        <li><a href="#">顶级私募</a></li>
+                        <li><a href="#">私募龙虎榜</a></li>
+                        <li><a href="#">选基参考</a></li>
+                        <li><a href="#">私募产品</a></li>
+                        <li><a href="#">私募经理</a></li>
+                        <li><a href="#">私募公司</a></li>
+                        <li><a href="#">私募新闻</a></li>
+                        <li><a href="#">理财问答</a></li>
+                        <li><a href="#">私募邦</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>服务导航</h3>
+                    <ul>
+                        <li><a href="#">私人定制</a></li>
+                        <li><a href="#">认识明星私募网</a></li>
+                        <li><a href="#">新手指引</a></li>
+                        <li><a href="#">产品收录</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>关注我们</h3>
+                    <ul class="foot_l_i">
+                        <li><a href="#"><i class="icon iconfont">&#xe603;</i></a></li>
+                        <li><a href="#"><i class="icon iconfont">&#xe602;</i></a></li>
+                        <li><a href="#"><i class="icon iconfont">&#xe607;</i></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>APP下载</h3>
+                    <ul class="foot_l_i">
+                        <li><a href="#"><i class="icon iconfont">&#xe604;</i></a></li>
+                        <li><a href="#"><i class="icon iconfont">&#xe605;</i></a></li>
+                    </ul>
+                </li>
+                <li style="padding-right: 0px;">
+                    <h3>客服热线</h3>
+                    <ul class="foot_l_i2 clearfix">
+                        <li><i class="icon iconfont">&#xe606;</i></li>
+                        <li>4008-888-222
+                            <br />021-88882222</li>
+                    </ul>
+                    <h3>在线咨询</h3>
+                    <ul class="foot_l_i2 foot_l_i3 clearfix">
+                        <li><a href="#"><i class="icon iconfont">&#xe609;</i>在线咨询</a> <span>08:00 ~ 23:00</span></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="container-fluid foot_bs">
+        <div class="warp foot_b">
+            <p>&copy; 2015 广州明星私募网 版权所有 <a href="http://www.miitbeian.gov.cn">粤ICP备13000033号</a></p>
+            <p>投资有风险，理财需谨慎</p>
+            <p><img src="theme/simu/images/verify_1.png" alt="" title="" />&nbsp;&nbsp;<img src="theme/simu/images/verify_1.png" alt="" title="" />&nbsp;&nbsp;<img src="theme/simu/images/verify_1.png" alt="" title="" /></p>
+        </div>
+    </div>
+</body>
+
+</html>
