@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="spring4-2" default="all">
+  
+  
+  <property file="spring4-2.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.swc"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.egg"/>
+    <include name="*.ane"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
+  <path id="jdk.classpath.1.8">
+    <fileset dir="${jdk.home.1.8}">
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/ext/access-bridge.jar"/>
+      <include name="jre/lib/ext/cldrdata.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+      <include name="jre/lib/ext/jaccess.jar"/>
+      <include name="jre/lib/ext/jfxrt.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/nashorn.jar"/>
+      <include name="jre/lib/ext/sunec.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/sunmscapi.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+      <include name="jre/lib/ext/zipfs.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/jfxswt.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/rt.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.8}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.lib.classpath">
+    <fileset dir="${basedir}/web/WEB-INF/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+  
+  <path id="library.maven:_antlr:antlr:2.7.7.classpath">
+    <pathelement location="E:/maven/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+  </path>
+  
+  <path id="library.maven:_aopalliance:aopalliance:1.0.classpath">
+    <pathelement location="E:/maven/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+  </path>
+  
+  <path id="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.7.4.classpath">
+    <pathelement location="E:/maven/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.4/jackson-annotations-2.7.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_com.fasterxml.jackson.core:jackson-core:2.7.4.classpath">
+    <pathelement location="E:/maven/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.4/jackson-core-2.7.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.7.4.classpath">
+    <pathelement location="E:/maven/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.4/jackson-databind-2.7.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_com.fasterxml:classmate:1.1.0.classpath">
+    <pathelement location="E:/maven/.m2/repository/com/fasterxml/classmate/1.1.0/classmate-1.1.0.jar"/>
+  </path>
+  
+  <path id="library.maven:_com.mchange:c3p0:0.9.2.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/com/mchange/c3p0/0.9.2.1/c3p0-0.9.2.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_com.mchange:mchange-commons-java:0.2.3.4.classpath">
+    <pathelement location="E:/maven/.m2/repository/com/mchange/mchange-commons-java/0.2.3.4/mchange-commons-java-0.2.3.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_commons-logging:commons-logging:1.1.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_dom4j:dom4j:1.6.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_javax.el:javax.el-api:2.2.4.classpath">
+    <pathelement location="E:/maven/.m2/repository/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_javax.validation:validation-api:1.1.0.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_mysql:mysql-connector-java:5.1.38.classpath">
+    <pathelement location="E:/maven/.m2/repository/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar"/>
+  </path>
+  
+  <path id="library.maven:_net.sf.ehcache:ehcache-core:2.4.3.classpath">
+    <pathelement location="E:/maven/.m2/repository/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar"/>
+  </path>
+  
+  <path id="library.maven:_ognl:ognl:3.0.8.classpath">
+    <pathelement location="E:/maven/.m2/repository/ognl/ognl/3.0.8/ognl-3.0.8.jar"/>
+  </path>
+  
+  <path id="library.maven:_opensymphony:ognl:2.6.11.classpath">
+    <pathelement location="E:/maven/.m2/repository/opensymphony/ognl/2.6.11/ognl-2.6.11.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.lucene:lucene-analyzers-common:5.3.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/apache/lucene/lucene-analyzers-common/5.3.1/lucene-analyzers-common-5.3.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.lucene:lucene-backward-codecs:5.3.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/apache/lucene/lucene-backward-codecs/5.3.1/lucene-backward-codecs-5.3.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.lucene:lucene-core:5.3.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.lucene:lucene-facet:5.3.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/apache/lucene/lucene-facet/5.3.1/lucene-facet-5.3.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.lucene:lucene-misc:5.3.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/apache/lucene/lucene-misc/5.3.1/lucene-misc-5.3.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.apache.lucene:lucene-queries:5.3.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/apache/lucene/lucene-queries/5.3.1/lucene-queries-5.3.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.glassfish.web:javax.el:2.2.4.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate.common:hibernate-commons-annotations:4.0.2.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.2.Final/hibernate-commons-annotations-4.0.2.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-c3p0:4.2.21.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-c3p0/4.2.21.Final/hibernate-c3p0-4.2.21.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-core:4.2.21.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-core/4.2.21.Final/hibernate-core-4.2.21.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-ehcache:4.2.21.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-ehcache/4.2.21.Final/hibernate-ehcache-4.2.21.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-entitymanager:4.2.21.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-entitymanager/4.2.21.Final/hibernate-entitymanager-4.2.21.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-envers:4.2.21.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-envers/4.2.21.Final/hibernate-envers-4.2.21.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-infinispan:4.2.21.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-infinispan/4.2.21.Final/hibernate-infinispan-4.2.21.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-osgi:4.2.21.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-osgi/4.2.21.Final/hibernate-osgi-4.2.21.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-proxool:4.2.21.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-proxool/4.2.21.Final/hibernate-proxool-4.2.21.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-search-engine:5.5.3.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-search-engine/5.5.3.Final/hibernate-search-engine-5.5.3.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-search-engine:tests:5.5.1.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-search-engine/5.5.1.Final/hibernate-search-engine-5.5.1.Final-tests.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-search-orm:5.5.3.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-search-orm/5.5.3.Final/hibernate-search-orm-5.5.3.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-validator-cdi:5.2.4.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-validator-cdi/5.2.4.Final/hibernate-validator-cdi-5.2.4.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.hibernate:hibernate-validator:5.2.4.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.infinispan:infinispan-commons:8.1.0.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/infinispan/infinispan-commons/8.1.0.Final/infinispan-commons-8.1.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.infinispan:infinispan-core:8.1.0.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/infinispan/infinispan-core/8.1.0.Final/infinispan-core-8.1.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.infinispan:infinispan-directory-provider:8.1.0.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/infinispan/infinispan-directory-provider/8.1.0.Final/infinispan-directory-provider-8.1.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.infinispan:infinispan-lucene-directory:8.1.0.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/infinispan/infinispan-lucene-directory/8.1.0.Final/infinispan-lucene-directory-8.1.0.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.javassist:javassist:3.18.1-ga.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.logging:jboss-logging:3.1.0.ga.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.marshalling:jboss-marshalling-osgi:1.4.10.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/jboss/marshalling/jboss-marshalling-osgi/1.4.10.Final/jboss-marshalling-osgi-1.4.10.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.jgroups:jgroups:3.6.4.final.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/jgroups/jgroups/3.6.4.Final/jgroups-3.6.4.Final.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.osgi:org.osgi.core:4.3.1.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/osgi/org.osgi.core/4.3.1/org.osgi.core-4.3.1.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.rhq.helpers:rhq-pluginannotations:3.0.4.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/rhq/helpers/rhq-pluginAnnotations/3.0.4/rhq-pluginAnnotations-3.0.4.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.slf4j:slf4j-api:1.6.6.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework.webflow:spring-binding:2.3.4.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/webflow/spring-binding/2.3.4.RELEASE/spring-binding-2.3.4.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework.webflow:spring-js-resources:2.3.4.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/webflow/spring-js-resources/2.3.4.RELEASE/spring-js-resources-2.3.4.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework.webflow:spring-js:2.3.4.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/webflow/spring-js/2.3.4.RELEASE/spring-js-2.3.4.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework.webflow:spring-webflow:2.3.4.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/webflow/spring-webflow/2.3.4.RELEASE/spring-webflow-2.3.4.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-aop:4.2.5.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-beans:4.2.5.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-context:4.2.5.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-context/4.2.5.RELEASE/spring-context-4.2.5.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-core:4.2.5.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-core/4.2.5.RELEASE/spring-core-4.2.5.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-expression:4.2.5.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-expression/4.2.5.RELEASE/spring-expression-4.2.5.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-jdbc:4.2.5.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-jdbc/4.2.5.RELEASE/spring-jdbc-4.2.5.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-orm:4.2.5.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-orm/4.2.5.RELEASE/spring-orm-4.2.5.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-tx:4.2.5.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-tx/4.2.5.RELEASE/spring-tx-4.2.5.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-web:4.0.0.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-web/4.0.0.RELEASE/spring-web-4.0.0.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.springframework:spring-webmvc:4.0.0.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.thymeleaf:thymeleaf-spring4:2.1.4.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/thymeleaf/thymeleaf-spring4/2.1.4.RELEASE/thymeleaf-spring4-2.1.4.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.thymeleaf:thymeleaf:2.1.4.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/thymeleaf/thymeleaf/2.1.4.RELEASE/thymeleaf-2.1.4.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_org.unbescape:unbescape:1.1.0.release.classpath">
+    <pathelement location="E:/maven/.m2/repository/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE.jar"/>
+  </path>
+  
+  <path id="library.maven:_proxool:proxool:0.8.3.classpath">
+    <pathelement location="E:/maven/.m2/repository/proxool/proxool/0.8.3/proxool-0.8.3.jar"/>
+  </path>
+  
+  
+  <!-- Application Server Libraries -->
+  
+  <path id="library.tomcat_8.0.33.classpath">
+    <pathelement location="E:/program files/tomcat/tomcat-8.0.33/lib/jsp-api.jar"/>
+    <pathelement location="E:/program files/tomcat/tomcat-8.0.33/lib/servlet-api.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/maven-gs/module_maven-gs.xml"/>
+  
+  <import file="${basedir}/module_spring4-2.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.maven-gs, clean.module.spring4-2, clean.artifact.spring4-2:war_exploded" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.maven-gs, compile.module.spring4-2" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.spring4-2:war_exploded" value="${basedir}/out/artifacts/spring4_2_war_exploded"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="clean.artifact.spring4-2:war_exploded" description="clean spring4-2:war exploded artifact output">
+    <delete dir="${artifact.output.spring4-2:war_exploded}"/>
+  </target>
+  
+  <target name="artifact.spring4-2:war_exploded" depends="init.artifacts, compile.module.spring4-2, compile.module.maven-gs" description="Build &#39;spring4-2:war exploded&#39; artifact">
+    <mkdir dir="${artifact.output.spring4-2:war_exploded}"/>
+    <copy todir="${artifact.output.spring4-2:war_exploded}">
+      <fileset dir="${basedir}/web"/>
+    </copy>
+    <mkdir dir="${artifact.output.spring4-2:war_exploded}/WEB-INF"/>
+    <copy file="${basedir}/web/WEB-INF/web.xml" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/web.xml"/>
+    <mkdir dir="${artifact.output.spring4-2:war_exploded}/WEB-INF"/>
+    <mkdir dir="${artifact.output.spring4-2:war_exploded}/WEB-INF/classes"/>
+    <copy todir="${artifact.output.spring4-2:war_exploded}/WEB-INF/classes">
+      <fileset dir="${spring4-2.output.dir}"/>
+    </copy>
+    <copy todir="${artifact.output.spring4-2:war_exploded}/WEB-INF/classes">
+      <fileset dir="${maven-gs.output.dir}"/>
+    </copy>
+    <mkdir dir="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/spring-context/4.2.5.RELEASE/spring-context-4.2.5.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-context-4.2.5.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-aop-4.2.5.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/aopalliance-1.0.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-beans-4.2.5.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/spring-core/4.2.5.RELEASE/spring-core-4.2.5.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-core-4.2.5.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/spring-expression/4.2.5.RELEASE/spring-expression-4.2.5.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-expression-4.2.5.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/webflow/spring-webflow/2.3.4.RELEASE/spring-webflow-2.3.4.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-webflow-2.3.4.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+    <copy file="E:/maven/.m2/repository/opensymphony/ognl/2.6.11/ognl-2.6.11.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/ognl-2.6.11.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/webflow/spring-binding/2.3.4.RELEASE/spring-binding-2.3.4.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-binding-2.3.4.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/webflow/spring-js/2.3.4.RELEASE/spring-js-2.3.4.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-js-2.3.4.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/webflow/spring-js-resources/2.3.4.RELEASE/spring-js-resources-2.3.4.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-js-resources-2.3.4.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/spring-web/4.0.0.RELEASE/spring-web-4.0.0.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-web-4.0.0.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/spring-webmvc-4.0.0.RELEASE.jar"/>
+    <copy file="E:/maven/.m2/repository/org/hibernate/hibernate-core/4.2.21.Final/hibernate-core-4.2.21.Final.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/hibernate-core-4.2.21.Final.jar"/>
+    <copy file="E:/maven/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/antlr-2.7.7.jar"/>
+    <copy file="E:/maven/.m2/repository/org/jboss/logging/jboss-logging/3.1.0.GA/jboss-logging-3.1.0.GA.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/jboss-logging-3.1.0.GA.jar"/>
+    <copy file="E:/maven/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/dom4j-1.6.1.jar"/>
+    <copy file="E:/maven/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
+    <copy file="E:/maven/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
+    <copy file="E:/maven/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+    <copy file="E:/maven/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.2.Final/hibernate-commons-annotations-4.0.2.Final.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar"/>
+    <copy file="E:/maven/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.4/jackson-annotations-2.7.4.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/jackson-annotations-2.7.4.jar"/>
+    <copy file="E:/maven/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.4/jackson-core-2.7.4.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/jackson-core-2.7.4.jar"/>
+    <copy file="E:/maven/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.4/jackson-databind-2.7.4.jar" tofile="${artifact.output.spring4-2:war_exploded}/WEB-INF/lib/jackson-databind-2.7.4.jar"/>
+  </target>
+  
+  <target name="build.all.artifacts" depends="artifact.spring4-2:war_exploded" description="Build all artifacts">
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>

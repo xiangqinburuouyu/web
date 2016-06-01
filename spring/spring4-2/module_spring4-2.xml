@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_spring4-2" default="compile.module.spring4-2">
+  <dirname property="module.spring4-2.basedir" file="${ant.file.module_spring4-2}"/>
+  
+  <property name="module.jdk.home.spring4-2" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.spring4-2" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.spring4-2" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.spring4-2" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="spring4-2.output.dir" value="${module.spring4-2.basedir}/out/production/spring4-2"/>
+  <property name="spring4-2.testoutput.dir" value="${module.spring4-2.basedir}/out/test/spring4-2"/>
+  
+  <path id="spring4-2.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="spring4-2.module.production.classpath">
+    <path refid="${module.jdk.classpath.spring4-2}"/>
+    <path refid="library.tomcat_8.0.33.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-webmvc:4.0.0.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.0.0.release.classpath"/>
+    <path refid="library.maven:_org.hibernate.common:hibernate-commons-annotations:4.0.2.final.classpath"/>
+    <path refid="library.maven:_mysql:mysql-connector-java:5.1.38.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.7.4.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-orm:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.final.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-core:4.2.21.final.classpath"/>
+    <path refid="library.maven:_org.javassist:javassist:3.18.1-ga.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.1.0.ga.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.final.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.6.6.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="spring4-2.runtime.production.module.classpath">
+    <pathelement location="${spring4-2.output.dir}"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-webmvc:4.0.0.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.0.0.release.classpath"/>
+    <path refid="library.maven:_org.hibernate.common:hibernate-commons-annotations:4.0.2.final.classpath"/>
+    <path refid="library.maven:_mysql:mysql-connector-java:5.1.38.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.7.4.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-orm:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.final.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-core:4.2.21.final.classpath"/>
+    <path refid="library.maven:_org.javassist:javassist:3.18.1-ga.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.1.0.ga.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.final.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.6.6.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="spring4-2.module.classpath">
+    <path refid="${module.jdk.classpath.spring4-2}"/>
+    <pathelement location="${spring4-2.output.dir}"/>
+    <path refid="library.tomcat_8.0.33.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-webmvc:4.0.0.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.0.0.release.classpath"/>
+    <path refid="library.maven:_org.hibernate.common:hibernate-commons-annotations:4.0.2.final.classpath"/>
+    <path refid="library.maven:_mysql:mysql-connector-java:5.1.38.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.7.4.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-orm:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.final.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-core:4.2.21.final.classpath"/>
+    <path refid="library.maven:_org.javassist:javassist:3.18.1-ga.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.1.0.ga.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.final.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.6.6.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="spring4-2.runtime.module.classpath">
+    <pathelement location="${spring4-2.testoutput.dir}"/>
+    <pathelement location="${spring4-2.output.dir}"/>
+    <path refid="library.tomcat_8.0.33.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-webmvc:4.0.0.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.0.0.release.classpath"/>
+    <path refid="library.maven:_org.hibernate.common:hibernate-commons-annotations:4.0.2.final.classpath"/>
+    <path refid="library.maven:_mysql:mysql-connector-java:5.1.38.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.7.4.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-orm:4.2.5.release.classpath"/>
+    <path refid="library.maven:_org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.final.classpath"/>
+    <path refid="library.maven:_org.hibernate:hibernate-core:4.2.21.final.classpath"/>
+    <path refid="library.maven:_org.javassist:javassist:3.18.1-ga.classpath"/>
+    <path refid="library.maven:_org.jboss.logging:jboss-logging:3.1.0.ga.classpath"/>
+    <path refid="library.maven:_org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.final.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.6.6.classpath"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.spring4-2">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.spring4-2">
+    <patternset refid="excluded.from.module.spring4-2"/>
+  </patternset>
+  
+  <path id="spring4-2.module.sourcepath">
+    <dirset dir="${module.spring4-2.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.spring4-2" depends="compile.module.spring4-2.production,compile.module.spring4-2.tests" description="Compile module spring4-2"/>
+  
+  <target name="compile.module.spring4-2.production" depends="register.custom.compilers" description="Compile module spring4-2; production classes">
+    <mkdir dir="${spring4-2.output.dir}"/>
+    <javac2 destdir="${spring4-2.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.spring4-2}/javac">
+      <compilerarg line="${compiler.args.spring4-2}"/>
+      <bootclasspath refid="spring4-2.module.bootclasspath"/>
+      <classpath refid="spring4-2.module.production.classpath"/>
+      <src refid="spring4-2.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.spring4-2"/>
+    </javac2>
+    
+    <copy todir="${spring4-2.output.dir}">
+      <fileset dir="${module.spring4-2.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.spring4-2.tests" depends="register.custom.compilers,compile.module.spring4-2.production" description="compile module spring4-2; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.spring4-2" description="cleanup module">
+    <delete dir="${spring4-2.output.dir}"/>
+    <delete dir="${spring4-2.testoutput.dir}"/>
+  </target>
+</project>
