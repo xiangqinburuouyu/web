@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false" package="com.lingdong.spring.hibernate.entities">
+
+    <class name="com.lingdong.spring.hibernate.entities.Users" table="users">
+        <id name="userId" type="java.lang.Integer" column="user_id">
+            <generator class="native"/>
+        </id>
+        <property name="userName" type="java.lang.String" length="30" column="user_name"/>
+        <property name="password" type="java.lang.String" length="30" column="password"/>
+        <property name="userNickName" type="java.lang.String" length="30" column="user_nickname"/>
+        <property name="email" type="java.lang.String" length="100" column="email"/>
+        <property name="createDate" type="java.util.Date" column="create_date"/>
+        <property name="lastDate" type="java.util.Date" column="last_date"/>
+        <property name="lastIp" type="java.lang.String" length="30" column="last_ip"/>
+        <property name="enabled" type="java.lang.Boolean" column="enabled"/>
+    </class>
+
+
+</hibernate-mapping>

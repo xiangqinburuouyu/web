@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- 加载资源文件 -->
+    <context:property-placeholder location="classpath*:hibernate.cfg.properties"></context:property-placeholder>
+    <!--使用bean class 加载资源文件-->
+    <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" >
+        <property name="location" value="classpath:hibernate.cfg.properties"></property>
+    </bean>-->
+    <!-- spring jdbc 配置数据源 -->
+    <bean id="driverManagerDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+    <!-- 配置hibernate的 SessionFactory实例 -->
+    <bean id="localSessionFactoryBean" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="driverManagerDataSource"></property>
+        <property name="configLocation">
+            <value>${hibernate.cfg.xml}</value>
+        </property>
+        <property name="mappingLocations">
+            <value>${hibernate.hbm.xml}</value>
+        </property>
+        <!--<property name="mappingDirectoryLocations">
+            <value>${hibernate.hbm.dir}</value>
+        </property>-->
+    </bean>
+
+    <!--配置spring 声明式事务管理器 -->
+    <bean id="hibernateTransactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="localSessionFactoryBean"></property>
+    </bean>
+    <!--<bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="driverManagerDataSource"></property>
+    </bean>-->
+    <!--<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+    <bean id="persistenceExceptionTranslationPostProcessor" class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />-->
+    <!--配置事务属性 通知，需要事务管理器-->
+    <tx:advice id="txAdvice" transaction-manager="hibernateTransactionManager">
+        <tx:attributes>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="query*" read-only="true"/>
+            <tx:method name="update*" rollback-for="Throwable"/>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--配置事务切点AOP,并把切点AOP和事务属性txAdvicd 关联起来-->
+    <aop:config>
+        <aop:pointcut id="pointcut" expression="execution(* com.lingdong.spring4.service.impl.*.*(..))"></aop:pointcut>
+        <aop:advisor pointcut-ref="pointcut" advice-ref="txAdvice" ></aop:advisor>
+    </aop:config>
+
+
+</beans>

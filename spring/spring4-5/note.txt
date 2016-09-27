@@ -1,0 +1,41 @@
+User 用户表操作
+1、添加用户  addUser();
+    <1> 检查用户是否存在 existUserName()
+    <2> 添加用户信息 addUser()
+
+2、更新用户信息 updateUser()
+    <1> 通过用户ID更新用户名 updateUserName()
+    <2> 通过用户ID更新用户密码 updateUserPassword()
+    <3> 通过用户名更新用户密码 updateUserPassword()
+
+方法重载
+
+// 传递User类设置用户的所有信息
+updateUser(User user);
+// 通过userId 设置用户名
+updateUser(String userName,Integer userId);
+// 通过userId 设置用户名和密码
+updateUser(String userName,String password,Integer userId);
+
+// 通过userId 设置密码
+updateUserPassword(String password,Integer userId);
+
+用户管理 设计
+
+角色表：Roles 表  role_id, role_name, role_description, enabled(是否启用)
+
+用户表：Users 表  user_id , user_name, password, user_nickname, email, create_date, last_date, last_ip, enabled (是否启用)
+
+用户组表：Groups group_id, group_name, parent_group, group_description, enabled
+
+用户、用户组表：UserGroup user_group_id, user_id, group_id
+
+用户、角色表：UserRole user_role_id, user_id, role_id
+
+角色、用户组表：RoleGroup role_group_id, role_id, group_id
+
+权限表：Authorities authority_id, authority_name, authority_description, enabled
+
+角色、权限表：Role_Authority role_authority_id,  role_id,
+
+功能表：

@@ -31,7 +31,7 @@ public class HelloWord {
 
     @RequestMapping(value = "/hello.do")
     public String hellos(String userName, Model model){
-        if(userName!="") {
+        if(userName.isEmpty()) {
             System.out.println(userName);
             model.addAttribute("helloword", "您的姓名是：" + userName);
             model.addAttribute("title", "当前页面：" + userName);

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false" package="com.lingdong.spring.hibernate.entities">
+
+    <class name="com.lingdong.spring.hibernate.entities.Roles" table="roles">
+        <id name="roleId" column="role_id">
+            <generator class="native"/>
+        </id>
+        <property name="roleName" type="java.lang.String" length="30" column="role_name"/>
+        <property name="roleDescription" type="java.lang.String" length="100" column="role_description"/>
+        <property name="enabled" type="java.lang.Boolean" column="enabled"/>
+    </class>
+
+
+</hibernate-mapping>

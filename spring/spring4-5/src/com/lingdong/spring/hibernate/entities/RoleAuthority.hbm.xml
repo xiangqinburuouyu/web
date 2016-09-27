@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false" package="com.lingdong.spring.hibernate.entities">
+
+    <class name="com.lingdong.spring.hibernate.entities.RoleAuthority" table="role_authority">
+        <id name="roleAuthorityId" type="java.lang.Integer" column="role_authority_id">
+            <generator class="native"/>
+        </id>
+        <property name="roleId" type="java.lang.Integer" column="role_id"/>
+        <property name="authorityId" type="java.lang.Integer" column="authority_id"/>
+
+    </class>
+
+
+</hibernate-mapping>
